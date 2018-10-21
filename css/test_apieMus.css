@@ -1,0 +1,133 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+
+footer {
+height: auto;
+background-color: #0091b0;
+color: #000;
+}
+
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  // -ms-overflow-style: scrollbar;
+  // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.nav-item:hover {
+border: 2px solid #0091b0;
+}
+/*
+.img-responsive {
+border-top: 3px solid #0091b0;
+}
+*/
+
+/*.col-sm {
+background-color: #555;
+color:white;
+margin: 14px;
+}
+
+.col-sm:hover {
+background-color: #CCC;
+color: #000;
+}
+*/
+
+.col-sm {
+background-color: #CCC;
+color:#555;
+margin: 14px;
+}
+
+.col-sm:hover {
+background-color: #f4f4f8;
+color: #555;
+}
+
+
+.centered-image {
+text-align: center;
+}
+#aruno_pic {
+width: auto;
+max-width: 100%;
+margin-top: 10px;
+}
+
+.active {
+border: 2px solid #0091b0;
+}
+
+.centered-text {
+text-align: center;
+background-color: white;
+color: #0091b0;
+font-weight: bold;
+}
+
+.centered-text:hover {
+background-color: white;
+color: #0091b0;
+font-weight:bold;
+}
+
+
+.styled-text {
+border-top:2px solid #0091b0;
+border-bottom:2px solid #0091b0;
+}
+
+.image-contain {
+position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 30%;
+    left: 20px;
+    background-color: #0091b0;
+    opacity: 0.5;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.intro {
+background-color: #CCC;
+color: #555;
+text-align: center;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+
+.intro-text {
+background-color: #f4f4f8;
+color: #555;
+}
+
+.intro-img {
+background-color: #FFF;
+color: #555;
+text-align: center;
+}
+
+.gap {
+margin-top:0;
+}
+
+.gap-left {
+margin-left: 7px;
+}
+.gap-right {
+margin-right: 7px;
+}
