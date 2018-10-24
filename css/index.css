@@ -26,6 +26,9 @@ html {
 .dropdown-item {
 color: #555;
 }
+.nav-item {
+border: 2px solid #fff;
+}
 
 .nav-item:hover {
 border: 2px solid #0091b0;
@@ -122,11 +125,10 @@ position: relative;
     position: absolute;
     bottom: 30%;
     left: 20px;
-    background-color: #0091b0;
-    opacity: 0.5;
+    background-color: rgba(0, 145, 176,0.8);
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: o;
+    padding:0;
 }
 
 .gap {
@@ -165,7 +167,12 @@ display:none;
 @media only screen and (max-width: 450px) {
 .text-block {
 display: none;
-
+}
+.top{
+display:none;
+}
+.col-sm {
+margin: 14px;
 }
 }
 
@@ -179,7 +186,6 @@ display: none;
     padding-left: 20px;
     padding-right: 20px;
 }
-
 
 
 
