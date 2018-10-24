@@ -8,7 +8,7 @@
 footer {
 height: auto;
 background-color: #0091b0;
-color: #000;
+color: #FFF;
 }
 
 
@@ -34,17 +34,12 @@ border-top: 3px solid #0091b0;
 color: #0091b0
 }
 
-.intro {
-text-align: left;
-background-color: #CCC;
-color: #555;
-margin-top: 14px;
-margin-bottom: 0;
-}
 
 .content {
 background-color: #f4f4f8;
-color: #000;
+color: #555;
+border-bottom: 1px solid #CCC;
+border-right: 1px solid #CCC;
 }
 
 
@@ -67,4 +62,26 @@ position: relative;
     padding-right: 20px;
 }
 
+.btn {
+display: block;
+text-align: center;
+background-color: #0091b0;
+color: #FFF;
+opacity: 0.7;
+}
 
+
+@media only screen and (max-width: 450px) {
+.text-block {
+display: none;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.top{
+display:none;
+}
+.my-btn {
+display:none;
+}
+}

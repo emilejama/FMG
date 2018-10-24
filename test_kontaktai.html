@@ -36,7 +36,7 @@
 <div class="collapse navbar-collapse" id="navbarResponsive">
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-      <a class="nav-link" href="test.html#">Paslaugos
+      <a class="nav-link" href="index.html#">Paslaugos
         <span class="sr-only">(current)</span>
       </a>
     </li>
@@ -44,7 +44,7 @@
       <a class="nav-link" href="test_apieMus.html">Apie Mus</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="kontaktai.html">Kontaktai</a>
+      <a class="nav-link" href="test_kontaktai.html">Kontaktai</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="test_karjera.html">Karjera</a>
@@ -70,17 +70,22 @@
   <header>
     <img class="img-responsive" src="./test_kontaktai.jpg" style= "height: auto; max-width: 100%;" class="img-fluid">
      <div class="text-block">
-       <h4 style="font-size:3vw;">FMG Financial Management Group:</h4>
-       <p style="font-size:3vw;">Kontaktai</p>
+       <h4 style="font-size:2vw;">FMG Financial Management Group:</h4>
+       <p style="font-size:2vw;">Kontaktai</p>
       </div>
   </header>
 </div>
 <!-- header end -->
 <!--content start-->
-
+<div class="container-fluid a-section">
+<a name="top"></a>
+<a href="#section-one" type="button" class="btn btn-info">Lietuva</a>
+<a href="#section-two" type="button" class="btn btn-info">Latvija</a>
+<a href="#section-three" type="button" class="btn btn-info">Estija</a></a>
+</div>
 <div class="container-fluid">
  <div class="row">
-  <div class="col-sm gap-right">
+  <div class="col-sm gap-right " id="section-one">
     <p>
      <b>Vilnius</b><br>
  UAB FINANCIAL MANAGEMENT GROUP<br>
@@ -101,7 +106,7 @@ El. paštas: info@fmg.lt
     </p>
    </div>
 <div class="w-100"></div>
-  <div class="col-sm gap gap-right">
+  <div class="col-sm gap gap-right" id="section-two">
     <p>
       <b>Ryga</b><br>
        SIA FMG LATVIA<br>
@@ -111,7 +116,7 @@ Faks. +371 66100388<br>
 El. paštas: info@fmggroup.eu
    </p>
   </div>
-  <div class="col-sm gap gap-left">
+  <div class="col-sm gap gap-left" id="section-three">
    <p>
      <b>Talinas</b><br>
       OÜ FINANCIAL MANAGEMENT GROUP<br>
@@ -124,6 +129,28 @@ El. paštas: info@fmg-tallinn.ee
 </div>
 </div>
 
+
+<div class="container-fluid my-btn">
+<button class="btn" onclick="topFunction()" id="myBtn" title="Go to top" style="position: fixed; right: 30px; bottom: 70px; background-color: #0091b0; opacity: 0.7">Į viršų</button>
+</div>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 <!--
 
 <div class="container-fluid">

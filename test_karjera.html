@@ -69,8 +69,8 @@
   <header>
     <img class="img-responsive" src="./test_karjerai.jpg" style= "height: auto; max-width: 100%;" class="img-fluid">
      <div class="text-block">
-       <h4 style="font-size:3vw;">FMG Financial Management Group:</h4>
-       <p style="font-size:3vw;">Karjera</p>
+       <h4 style="font-size:2vw;">FMG Financial Management Group:</h4>
+       <p style="font-size:2vw;">Karjera</p>
       </div>
   </header>
 </div>
@@ -79,10 +79,9 @@
 
 
 <div class="container-fluid">
-<p class="intro"><b> Prisijunkite prie mūsų!</b></p>
-</div>
-<div class="container-fluid">
+  <a name="top"></a>
   <p class="content">
+    <b> Prisijunkite prie mūsų!</b><br>
 Turite išsilavinimą finansų srityje, o gal vis dar studijuojate finansus, ekonomiką ar buhalterinę apskaitą?<br>
 
 Mokate ir jums patinka analizuoti?<br>
@@ -103,6 +102,27 @@ Konfidencialumą garantuojame.</p>
 
 </div>
 
+<div class="container-fluid my-btn">
+<button class="btn" onclick="topFunction()" id="myBtn" title="Go to top" style="position: fixed; right: 30px; bottom: 70px; background-color: #0091b0; opacity: 0.7 color: #FFF;">Į viršų</button>
+</div>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 <!--content end -->
 
 

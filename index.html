@@ -11,7 +11,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-   <link href="css/test.css" rel="stylesheet">
+   <link href="css/index.css" rel="stylesheet">
     <style>
       .container-fluid{}
       * <!--{ border: solid 1px black;}-->
@@ -68,16 +68,17 @@
 <!--header start -->
 <div class="container-fluid image-contain">
   <header>
-    <img class="img-responsive" src="./test_index_pic.jpg" style= "height: auto; max-width: 100%;" class="img-fluid">
+    <img class="img-responsive" src="./index-pic.jpg" style= "height: auto; max-width: 100%;" class="img-fluid">
     <!--<h3><span>FMG Financial Management Group:<br>Paslaugos</span></h3>-->
       <div class="text-block">
-       <h4 style="font-size:3vw; class="header-text">FMG Financial Management Group:</h4>
-       <p style="font-size:3vw;">Paslaugos</p>
+       <h4 style="font-size:2vw;" class="header-text">FMG Financial Management Group:</h4>
+       <p style="font-size:2vw;">Paslaugos</p>
       </div>
   </header>
 </div>
 <!-- header end -->
 <!--content start-->
+
 <div class="container-fluid a-section">
 <a name="top"></a>
 <a href="#section-one" type="button" class="btn btn-info">Teisinės paslaugos</a>
@@ -102,7 +103,6 @@
        <li>Virtualus biuras</li>
        <li>PVM registracija, fiskalinio agento paslaugos</li>
     </ul>
-    <a href="#top" type="button" class="btn btn-info top">Į viršų</a>
   </div>
   <div class="col-sm gap-left" id="section-two">
       <b>Darbo užmokestis</b><br>
@@ -114,7 +114,6 @@
        <li>Personalo dokumentacijos tvarkymas</li>
        <li>Kliento interesų atstovavimas SoDroje, VMI bei Registrų Centre</li>
     </ul>
-     <a href="#top" type="button" class="btn btn-info top">Į viršų</a>
   </div>
   <div class="w-100"></div>
    <div class="col-sm gap gap-right" id="section-three">
@@ -127,7 +126,6 @@
        <li>Pelno ir pajamų mokesčių grąžinimai tarptautiniame lygyje (dvigubo apmokestinimo išvengimo sutarčių pagrindu)</li>
        <li>Pridėtinės vertės mokesčio grąžinimai iš vietinių biudžetų bei kitų ES šalių</li>
     </ul>
-     <a href="#top" type="button" class="btn btn-info top">Į viršų</a>
   </div>
   <div class="col-sm gap gap-left" id="section-four">
      <b>Įmonių finansai</b><br>
@@ -138,7 +136,6 @@
         <li>Konsultavimas įmonių įsigijimų ir susijungimų klausimais (M&A)</li>
         <li>Strateginis konsultavimas verslo vertės didinimo klausimais</li>
     </ul>
-     <a href="#top" type="button" class="btn btn-info top">Į viršų</a>
   </div>
   <div class="w-100"></div>
     <div class="col-sm gap" id="section-five">
@@ -153,11 +150,31 @@
        <li>Dokumentų archyvavimas (E-archyvas bei popierinių dokumentų saugojimas)</li>
       <li>Pirminių apskaitos dokumentų rengimas, sekretoriavimo paslaugos (pardavimo sąskaitų išrašymas, darbo laiko apskaitos žiniaraščių pildymas, inventorizacijų dokumentavimas, reprezentacijos aktai, akcininkų susirinkimų protokolai, mokėjimo pavedimų parengimas ir t.t.), kurjerio paslaugos</li>
      </ul>
-      <a href="#top" type="button" class="btn btn-info top">Į viršų</a>
 </div>
 </div>
 </div>
 
+<div class="container-fluid my-btn">
+<button class="btn" onclick="topFunction()" id="myBtn" title="Go to top" style="position: fixed; right: 30px; bottom: 70px; background-color: #0091b0; opacity: 0.7">Į viršų</button>
+</div>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 <!--
 
 <div class="container-fluid">

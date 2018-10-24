@@ -35,7 +35,7 @@
 <div class="collapse navbar-collapse" id="navbarResponsive">
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-      <a class="nav-link" href="test.html#">Paslaugos
+      <a class="nav-link" href="index.html#">Paslaugos
         <span class="sr-only">(current)</span>
       </a>
     </li>
@@ -67,20 +67,26 @@
 <!--header start -->
 <div class="container-fluid image-contain">
   <header>
-    <img class="img-responsive" src="./apie.jpg" style= "height: auto; max-width: 100%;" class="img-fluid">
+    <img class="img-responsive" src="./apie_mus.jpg" style= "height: auto; max-width: 100%; border-top: 2px solid #0091b0;" class="img-fluid">
      <div class="text-block">
-       <h4 style="font-size:3vw;">FMG Financial Management Group:</h4>
-       <p style="font-size:3vw;">Apie Mus</p>
+       <h4 style="font-size:2vw;">FMG Financial Management Group:</h4>
+       <p style="font-size:2vw;">Apie Mus</p>
       </div>
   </header>
 </div>
 <!-- header end -->
 <!--content start-->
-
-
+<div class="container-fluid a-section">
+<a name="top"></a>
+<a href="#section-one" type="button" class="btn btn-info">Apie Mus</a>
+<a href="#section-two" type="button" class="btn btn-info">Galimybės</a>
+</div>
+<div class="container-fluid centered-image img-only-mobile">
+  <img class="img-responsive" id="aruno_pic" src="./arunas.jpg" style= "height: auto; max-width: 100%;" class="img-fluid"><p style="text-align: center;">Vadovaujantis partneris MBA Arūnas Šikšta</p>
+</div>
 <div class="container-fluid">
  <div class="row">
-  <div class="col-sm intro-text">
+  <div class="col-sm intro-text" id="section-one">
  Nuo 1999 m. FMG specializuojasi apskaitos, audito, verslo ir teisinių paslaugų srityje.<br>
 Turime išskirtines kompetencijas apskaitos tvarkymui pagal tarptautinius apskaitos standartus (IFRS), konsolidavimui, didelių įmonių apskaitos vedimui (virš 300 darbuotojų). Galime suteikti įmonėms registracijos adresą Lietuvoje (ES), virtualų ofisą, pasirūpinti įmonės steigimu ir priežiūra, leidimo gyventi išdavimu.<br>
 FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Druskininkuose, Klaipėdoje, Rygoje ir Taline.
@@ -107,16 +113,16 @@ FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Druskinink
     </div>
   </div>
   </div>
-  <div class="container-fluid centered-image">
+  <div class="container-fluid centered-image img-only-desktop">
   <img class="img-responsive" id="aruno_pic" src="./arunas.jpg" style= "height: auto; max-width: 100%;" class="img-fluid"><p style="text-align: center;">Vadovaujantis partneris MBA Arūnas Šikšta</p>
 </div>
 </div>
 <div class="container-fluid">
-  <p class="intro">Mes žinome, kad esame išskirtiniai. Siekdami, kad tuo įsitikintų ir mūsų klientai, mes jiems suteikiame tokias galimybes:</p>
+  <p class="intro"id="section-two">Mes žinome, kad esame išskirtiniai. Siekdami, kad tuo įsitikintų ir mūsų klientai, mes jiems suteikiame tokias galimybes:</p>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" >
  <div class="row">
-  <div class="col-sm gap-right">
+  <div class="col-sm gap-right" >
     <p class>
      <b>Pradinė investicija į klientą</b><br>
 Bendradarbiavimo pradžioje be papildomo atlygio apmokome kliento personalą pirminių apskaitos dokumentų pildymo, pateikiame dokumentų šablonus, nemokamai konsultuojame apskaitos politikos bei mokesčių planavimo klausimais. Kiekvienam klientui, kurio apskaitą perimame iš kitų buhalterių, nemokamai atliekame pradinę apskaitos bei mokesčių peržiūrą, t.y. nustatome, kiek kompetentingai apskaita buvo tvarkyta iki perdavimo momento.</p>
@@ -140,6 +146,29 @@ Mūsų klientai vertina mūsų komandos profesionalumą ir šiltą bei draugišk
   </div>
 </div>
 </div>
+
+
+<div class="container-fluid my-btn">
+<button class="btn" onclick="topFunction()" id="myBtn" title="Go to top" style="position: fixed; right: 30px; bottom: 70px; background-color: #0091b0; opacity: 0.7">Į viršų</button>
+</div>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 <!--
 <div class="container-fluid ">
   <div class="styled-text">
