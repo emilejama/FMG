@@ -11,7 +11,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-   <link href="css/test_kontaktai.css" rel="stylesheet">
+   <link href="css/index.css" rel="stylesheet">
     <style>
       .container-fluid{}
       * <!--{ border: solid 1px black;}-->
@@ -26,13 +26,47 @@
 <div class="container-fluid">
   <div class="row row justify-content-between">
   <div class="col-2">
-    <a class="navbar-brand" href="/test.html#"> <img src="./aruno_pic.jpg" width="135" height="70" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="/test.html#"> <img src="img/logo.jpg" width="135" height="70" class="d-inline-block align-top" alt="">
     </a>
   </div>
   <nav class="col-6 navbar navbar-expand-lg navbar-light ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
   </button>
+  <!--menu desk-->
+<div class="collapse navbar-collapse" id="navbarResponsive-desk">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html#">Paslaugos
+        <span class="sr-only">(current)</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="test_apieMus.html">Apie Mus</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="test_kontaktai.html">Kontaktai</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="test_karjera.html">Karjera</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kalba
+      </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">LT</a>
+          <a class="dropdown-item" href="#">EN</a>
+          <a class="dropdown-item" href="#">RU</a>
+        </div>
+     </li>
+    </ul>
+  </div>
+  <!--menu desk-->
+
+</nav>
+</div>
+</div>
+
 <div class="collapse navbar-collapse" id="navbarResponsive">
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
@@ -60,15 +94,11 @@
      </li>
     </ul>
   </div>
-</div>
-</nav>
-</div>
-</div>
 <!--navbar end-->
 <!--header start -->
 <div class="container-fluid image-contain">
   <header>
-    <img class="img-responsive" src="./test_kontaktai.jpg" style= "height: auto; max-width: 100%;" class="img-fluid">
+    <img class="img-responsive" src="img/test_kontaktai.jpg" style= "height: auto; max-width: 100%;" class="img-fluid">
       <div class="text-block"style="font-size:2vw;">
        FMG Financial Management Group:<br>
        Paslaugos
@@ -77,7 +107,7 @@
 </div>
 <!-- header end -->
 <!--content start-->
-<div class="container-fluid a-section">
+<div class="container-fluid a-section-kontaktai">
 <a name="top"></a>
 <a href="#section-one" type="button" class="btn btn-info">Lietuva</a>
 <a href="#section-two" type="button" class="btn btn-info">Latvija</a>
@@ -85,7 +115,7 @@
 </div>
 <div class="container-fluid">
  <div class="row">
-  <div class="col-sm gap-right " id="section-one">
+  <div class="col-sm gap-right sh" id="section-one">
     <p>
      <b>Vilnius</b><br>
  UAB FINANCIAL MANAGEMENT GROUP<br>
@@ -95,7 +125,7 @@ Faks. +370 5 2503513<br>
 E. paštas: info@fmg.lt<br>
 </p>
 </div>
- <div class="col-sm gap-left">
+ <div class="col-sm gap-left sh">
    <p>
     <b>Klaipėda</b><br>
 UAB FINANCIAL MANAGEMENT GROUP<br>
@@ -106,7 +136,7 @@ El. paštas: info@fmg.lt
     </p>
    </div>
 <div class="w-100"></div>
-  <div class="col-sm gap gap-right" id="section-two">
+  <div class="col-sm gap gap-right sh" id="section-two">
     <p>
       <b>Ryga</b><br>
        SIA FMG LATVIA<br>
@@ -116,7 +146,7 @@ Faks. +371 66100388<br>
 El. paštas: info@fmggroup.eu
    </p>
   </div>
-  <div class="col-sm gap gap-left" id="section-three">
+  <div class="col-sm gap gap-left sh" id="section-three">
    <p>
      <b>Talinas</b><br>
       OÜ FINANCIAL MANAGEMENT GROUP<br>

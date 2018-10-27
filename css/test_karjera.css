@@ -21,10 +21,14 @@ html {
   // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.nav-item {
+border: 2px solid #fff;
+}
+
 .nav-item:hover {
 border: 2px solid #0091b0;
 }
-
+/* iki cia OK*/
 .img-responsive {
 border-top: 3px solid #0091b0;
 }

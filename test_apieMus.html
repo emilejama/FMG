@@ -11,7 +11,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-   <link href="css/test_apieMus.css" rel="stylesheet">
+   <link href="css/index.css" rel="stylesheet">
     <style>
       .container-fluid{}
       * <!--{ border: solid 1px black;}-->
@@ -25,13 +25,47 @@
 <div class="container-fluid">
   <div class="row row justify-content-between">
   <div class="col-2">
-    <a class="navbar-brand" href="/test.html#"> <img src="./aruno_pic.jpg" width="135" height="70" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="/test.html#"> <img src="img/logo.jpg" width="135" height="70" class="d-inline-block align-top" alt="">
     </a>
   </div>
+
   <nav class="col-6 navbar navbar-expand-lg navbar-light ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
   </button>
+  <!-- desk menu -->
+<div class="collapse navbar-collapse" id="navbarResponsive-desk">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html#">Paslaugos
+        <span class="sr-only">(current)</span>
+      </a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="test_apieMus.html">Apie Mus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="test_kontaktai.html">Kontaktai</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="test_karjera.html">Karjera</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kalba
+      </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">LT</a>
+          <a class="dropdown-item" href="#">EN</a>
+          <a class="dropdown-item" href="#">RU</a>
+        </div>
+     </li>
+    </ul>
+  </div>
+  <!--desk menu-->
+</nav>
+</div>
+</div>
+
 <div class="collapse navbar-collapse" id="navbarResponsive">
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
@@ -59,15 +93,11 @@
      </li>
     </ul>
   </div>
-</div>
-</nav>
-</div>
-</div>
 <!--navbar end-->
 <!--header start -->
 <div class="container-fluid image-contain">
   <header>
-    <img class="img-responsive" src="./apie_mus.jpg" style= "height: auto; max-width: 100%; border-top: 2px solid #0091b0;" class="img-fluid">
+    <img class="img-responsive" src="img/apie_mus.jpg" style= "height: auto; max-width: 100%; border-top: 2px solid #0091b0;" class="img-fluid">
       <div class="text-block"style="font-size:2vw;">
        FMG Financial Management Group:<br>
        Paslaugos
@@ -82,7 +112,7 @@
 <a href="#section-two" type="button" class="btn btn-info">Galimybės</a>
 </div>
 <div class="container-fluid centered-image img-only-mobile">
-  <img class="img-responsive" id="aruno_pic" src="./arunas.jpg" style= "height: auto; max-width: 100%;" class="img-fluid"><p style="text-align: center;">Vadovaujantis partneris MBA Arūnas Šikšta</p>
+  <img class="img-responsive" id="aruno_pic" src="img/arunas.jpg" style= "height: auto; max-width: 100%;" class="img-fluid"><p style="text-align: center;">Vadovaujantis partneris MBA Arūnas Šikšta</p>
 </div>
 <div class="container-fluid">
  <div class="row">
@@ -99,22 +129,23 @@ FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Druskinink
 <div class="container-fluid ">
   <div class="styled-text">
   <div class="row">
-    <div class="col-sm centered-text gap">
+
+    <div class="col-sm centered-text-apiemus gap">
       Ilgamečiai<br> klientai <br>
       215
     </div>
-    <div class="col-sm centered-text gap">
+    <div class="col-sm centered-text-apiemus gap">
       Tarptautiniai<br> klientai <br>
       70
     </div>
-    <div class="col-sm centered-text gap">
+    <div class="col-sm centered-text-apiemus gap">
       Bendra aptarnaujamų įmonių apyvarta 2012m.<br>
       >500mln. eur.
     </div>
   </div>
   </div>
   <div class="container-fluid centered-image img-only-desktop">
-  <img class="img-responsive" id="aruno_pic" src="./arunas.jpg" style= "height: auto; max-width: 100%;" class="img-fluid"><p style="text-align: center;">Vadovaujantis partneris MBA Arūnas Šikšta</p>
+  <img class="img-responsive" id="aruno_pic" src="img/arunas.jpg" style= "height: auto; max-width: 100%;" class="img-fluid"><p style="text-align: center;">Vadovaujantis partneris MBA Arūnas Šikšta</p>
 </div>
 </div>
 <div class="container-fluid">
@@ -122,24 +153,24 @@ FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Druskinink
 </div>
 <div class="container-fluid" >
  <div class="row">
-  <div class="col-sm gap-right" >
-    <p class>
+  <div class="col-sm gap-right sh" >
+    <p>
      <b>Pradinė investicija į klientą</b><br>
 Bendradarbiavimo pradžioje be papildomo atlygio apmokome kliento personalą pirminių apskaitos dokumentų pildymo, pateikiame dokumentų šablonus, nemokamai konsultuojame apskaitos politikos bei mokesčių planavimo klausimais. Kiekvienam klientui, kurio apskaitą perimame iš kitų buhalterių, nemokamai atliekame pradinę apskaitos bei mokesčių peržiūrą, t.y. nustatome, kiek kompetentingai apskaita buvo tvarkyta iki perdavimo momento.</p>
 </div>
-  <div class="col-sm gap-left mobile-top">
+  <div class="col-sm gap-left mobile-top sh">
     <p>
       <b>Bandomasis laikotarpis</b><br>Siekdami su klientais sukurti ilgalaikius santykius ir norėdami būti jiems naudingi ne tik vienkartiniuose projektuose, suteikiame klientams nemokamą bandomąjį laikotarpį, kurio metu klientas gali išbandyti mūsų paslaugas ir komunikaciją be jokių papildomų sąlygų.
     </p>
   </div>
   <div class="w-100"></div>
-  <div class="col-sm gap gap-right mobile-top">
+  <div class="col-sm gap gap-right mobile-top sh">
    <p>
      <b>Mūsų įmonėje jokios biurokratijos</b><br>Esame maksimaliai orientuoti į sprendimo pasiūlymą ir greitą rezultatą. Nedelsiant reaguojame į kliento užklausimus. Jokių nereikalingų formalių procedūrų.
 Mūsų klientai vertina mūsų komandos profesionalumą ir šiltą bei draugišką bendravimą.
    </p>
   </div>
-   <div class="col-sm gap gap-left mobile-top">
+   <div class="col-sm gap gap-left mobile-top sh">
     <p>
      <b>Į rezultatą nukreiptas požiūris</b><br>Per šešiolika veiklos metų savo paslaugas esame suteikę daugiau nei 500-ams klientų. Suvokiame jų poreikių įvairovę ir suprantame, jog kiekvienas klientas yra individualus.
      Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet nesiekiame parduoti to, kas jam nereikalinga.</p>

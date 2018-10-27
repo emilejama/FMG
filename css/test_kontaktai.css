@@ -21,11 +21,14 @@ html {
   // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.nav-item {
+border: 2px solid #fff;
+}
 .nav-item:hover {
 border: 2px solid #0091b0;
 }
 
-/*
+/*IKI CIA OK
 .col-sm p {
 text-align: center;
 color: white;
@@ -107,7 +110,7 @@ margin: 14px;
 border-bottom: 1px solid #CCC;
 border-right: 1px solid #CCC;
 }
-
+/*ok col sm*/
 
 .gap {
 margin-top:0;
