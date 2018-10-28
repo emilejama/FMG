@@ -29,10 +29,12 @@ color: #555;
 .nav-item {
 border: 2px solid #fff;
 box-shadow: 1px 5px 5px grey;
+color: #555;
 }
 
 .nav-item:hover {
 border: 2px solid #0091b0;
+color: #555;
 }
 
 
@@ -50,7 +52,7 @@ color: #555;
 }
  */
 
-.img-responsive {
+.main-img {
 border-top: 3px solid #0091b0;
 }
 
@@ -171,10 +173,11 @@ font-weight: bold;
 border: none;
 }
 
-.centered-text-apiemus:hover {
+.centered-text-bio {
+text-align: center;
 background-color: white;
-color: #0091b0;
-font-weight:bold;
+color: #555;
+border: none;
 }
 
 
@@ -205,8 +208,13 @@ text-align: center;
 
 .img-only-desktop {
 margin-top: 5px;
+display: none;
 }
 
 .centered-image {
 text-align: center;
+}
+
+.img-only-mobile {
+display: none;
 }
