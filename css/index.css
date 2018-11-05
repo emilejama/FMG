@@ -7,8 +7,9 @@
 
 footer {
 height: auto;
-background-color: #FFF;
-color: #555;
+background-color: rgb(84, 141, 212);
+color: #FFF;
+
 }
 
 
@@ -111,10 +112,18 @@ border-bottom: 2px solid #FFF;
 
 #myBtn {
 position: fixed;
-right: 30px;
+right: 13px;
 bottom: 70px;
-background-color: rgb(84, 141, 212);
-opacity: 0.8
+background-color: #FFF;
+color: rgb(84, 141, 212);
+opacity: 0.9;
+box-shadow: 1px 5px 5px rgb(84, 141, 212);
+outline: none;
+border: none;
+}
+
+#btnSelect {
+width: 100%;
 }
 
 
@@ -133,6 +142,12 @@ display: none;
 }
 .intro {
 margin-top: 0;
+}
+.btnSelect {
+display: none;
+}
+.mobile-visible {
+display: none;
 }
 }
 
@@ -158,11 +173,22 @@ margin-top: 0;
 .nav-link {
 shadow-box:none;
 background-color: #FFF;
+
 }
 .nav-link:hover {
 shadow-box:none;
 background-color: rgb(84, 141, 212);
 color: #FFF;
+}
+
+
+.container-fluid {
+padding: 0;
+margin:0;
+}
+
+.desktop-visible {
+display:none;
 }
 }
 
@@ -202,9 +228,7 @@ font-weight: bold;
 border: none;
 }
 
-.col-sm-3 {
-padding-top: 40px;
-}
+
 
 .centered-text-bio {
 text-align: center;
@@ -255,6 +279,7 @@ display: none;
 
 #navbarResponsive {
 text-align: center;
+
 }
 
 .nav-link {
