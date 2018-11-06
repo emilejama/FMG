@@ -190,6 +190,12 @@ margin:0;
 .desktop-visible {
 display:none;
 }
+.navbar-collapse {
+margin-bottom: 8px;
+}
+.nav-item {
+box-shadow: 1px 5px 5px rgb(84, 141, 212);
+}
 }
 
 @media only screen and (min-width: 450px) {
@@ -301,3 +307,20 @@ color:   rgb(84, 141, 212);
 
     flex: 0 0 60%;
 }
+
+.navbar-toggler {
+border: none;
+outline: none;
+box-shadow: 1px 5px 5px rgb(84, 141, 212);
+}
+
+.navbar-toggler:hover {
+border: none;
+outline: none;
+}
+
+.navbar-toggler:focus {
+border: none;
+outline: none;
+}
+
