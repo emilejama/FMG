@@ -86,6 +86,7 @@ color: #555;
 	width: 16px;
 	height: 16px;
 	cursor: pointer;
+
 }
 
 .dotstyle li a {
@@ -95,10 +96,10 @@ color: #555;
 	height: 100%;
 	outline: none;
 	border-radius: 50%;
-  border: 3px solid #2B4767;
 	text-indent: -999em;
 	cursor: pointer; /* make the text accessible to screen readers */
 	position: absolute;
+
 }
 
 /* Fill up */
@@ -116,14 +117,14 @@ color: #555;
 	height: 0;
 	left: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: #FFF;
 	box-shadow: 0 0 1px #fff;
 	transition: height 0.3s;
 }
 
 .dotstyle-fillup li a:hover,
 .dotstyle-fillup li a:focus {
-	background-color: #2B4767;
+	  background-color: rgb(84, 141, 212);
 }
 
 .dotstyle-fillup li.current a::after {
@@ -144,7 +145,13 @@ display: none;
 color: #555;
 }
 
+.dot-fixed {
+height: 54%;
+}
 
+.dot-fixed-services {
+height: 70%;
+}
 
 .activePanel{
   display:inline-block;
@@ -158,11 +165,12 @@ font-size: 13px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-color:   rgb(84, 141, 212);
+color:  #2B4767;
 }
 
 .navbar-light .navbar-nav .active > .nav-link{
 color:   rgb(84, 141, 212);
+background-color: #DBE4F3;
 }
 
 .navbar-expand-lg{
@@ -187,13 +195,13 @@ outline: none;
 }
 
 
-.dark-nav-button {
+/*.dark-nav-button {
 background-color:  #2B4767;
 }
 
 .light-nav-button {
 background-color: #DBE4F3;
-}
+}*/
 
 
 .nav-item {
@@ -235,3 +243,16 @@ margin-top: 50px;
 margin-top: 70px;
 }
 
+
+.bullet-colour {
+list-style: none; /* Remove default bullets */
+}
+
+.bullet-colour li::before {
+ content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(84, 141, 212); /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  font-weight: bold; /* If you want it to be bold */
+}
