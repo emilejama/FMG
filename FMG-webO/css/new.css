@@ -1,0 +1,257 @@
+footer {
+height: auto;
+background-color: #FFF;
+color: #000;
+}
+
+.header-image {
+width: 100%;
+height: auto;
+}
+
+.intro-text {
+color:#555;
+font-size: 16px;
+
+}
+
+
+.header-content {
+padding-top: 20px;
+}
+
+.col-sm-4 {
+background-color: rgb(255,255,255, 0.9)
+}
+.col-sm-8 {
+background-color: rgb(255,255,255, 0.9)
+}
+.col-sm-12 {
+background-color: rgb(255,255,255, 0.9)
+}
+.col-sm-3 {
+background-color: rgb(255,255,255, 0.9)
+}
+
+.image {
+position: relative;
+}
+
+.header-image {
+position: relative;
+text-align: center;
+}
+
+.header-row {
+position: absolute;
+top:10%;
+}
+
+.header-row {
+height: 400px;
+}
+
+.e_mail {
+color: rgb(84, 141, 212);
+}
+
+.img-text {
+color: #555;
+margin-top: 30px;
+margin-right: 10px;
+float: right;
+position: relative;
+font-style: italic;
+}
+
+.intro-panel {
+margin-top: 20px;
+color: #555;
+}
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+  margin-bottom: 20px;
+
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 16px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+  border: 3px solid #2B4767;
+	text-indent: -999em;
+	cursor: pointer; /* make the text accessible to screen readers */
+	position: absolute;
+}
+
+/* Fill up */
+.dotstyle-fillup li a {
+	overflow: hidden;
+	background-color: #FFF;
+	box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
+	transition: background 0.3s;
+}
+
+.dotstyle-fillup li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 1px #fff;
+	transition: height 0.3s;
+}
+
+.dotstyle-fillup li a:hover,
+.dotstyle-fillup li a:focus {
+	background-color: #2B4767;
+}
+
+.dotstyle-fillup li.current a::after {
+	height: 100%;
+  }
+
+.dotstyle {
+text-align: center;
+
+}
+
+.side-panel {
+background-color: rgb(219,228,243,0.7);
+}
+
+.panel {
+display: none;
+color: #555;
+}
+
+
+
+.activePanel{
+  display:inline-block;
+  }
+
+
+.nav-link {
+color: #555;
+text-transform:uppercase;
+font-size: 13px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+color:   rgb(84, 141, 212);
+
+
+}
+
+
+.navbar-light .navbar-nav .active > .nav-link{
+color:   #555;
+
+}
+
+.navbar-expand-lg{
+max-width: 100%;
+flex: 0 0 60%;
+}
+
+.navbar-toggler {
+border: none;
+outline: none;
+box-shadow: 1px 5px 5px rgb(84, 141, 212);
+}
+
+.navbar-toggler:hover {
+border: none;
+outline: none;
+}
+
+.navbar-toggler:focus {
+border: none;
+outline: none;
+}
+
+
+.dark-nav-button {
+background-color:  #2B4767;
+}
+
+.light-nav-button {
+background-color: #DBE4F3;
+}
+
+
+.nav-item {
+letter-spacing: 1,5;
+}
+
+.middle-panel {
+background-color: rgb(219,228,243,0.9);
+}
+
+.biography {
+margin-bottom: 20px;
+}
+
+.italic-style {
+font-style: italic;
+}
+
+
+
+.contacts-info {
+
+}
+.text-block {
+    position: absolute;
+    top: 100px;
+    left: 59px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    }
+
+.contacts-list-ul{
+margin-top: 120px;
+
+}
+
+
+
+.intro-info {
+position: relative;
+}
+
+.middle-info {
+margin-top: 70px;
+}
+
+.contacts-picture {
+max-width: 100%;
+height: auto;
+
+
+}
+
