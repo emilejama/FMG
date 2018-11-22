@@ -9,7 +9,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <!--fonts -->
+     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <!-- Custom styles for this template -->
    <link href="css/main.css" rel="stylesheet">
     <style>
@@ -56,6 +58,14 @@ $(document).ready(function(){
 
   toggleThis(".panel-1");
 });
+
+function toggleCity(id, event){
+    console.log(id,event);
+    $(".activeCity").removeClass("activeCity");
+    $(id).addClass("activeCity");
+
+    return false;
+}
 </script>
 </head>
 
@@ -128,20 +138,27 @@ $(document).ready(function(){
   </div>
 <!--navbar end-->
 <div class="container-fluid image header">
-  <img class="responsive-image header-image" src="img/newheader.jpg">
+
 
 <!--<div class="container-fluid header" >-->
   <div class="row header-row">
     <div class="col-sm-2 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: rgb(255, 255, 255, 0.8)">
 
-    <ul class="contacts-list-ul bullet-colour" style="width: 100%;
+    <ul class="contacts-list-ul bullet" style="width: 100%;
 background-color: rgb(255, 255, 255, 0); line-height: 2; height: 180px; margin-left: 20px;
 ">
-     <li><a href="#" onclick="return toggleThis('.panel-1')" id="firstdot" style="color: #555; text-transform: uppercase;">Vilnius</a></li>
-      <li><a href="#" onclick="return toggleThis('.panel-2')" id="seconddot" style="color: #555; text-transform: uppercase;">Klaipėda</a></li>
-     <li><a href="#" onclick="return toggleThis('.panel-3'); " id="thirddot" style="color: #555; text-transform: uppercase;">Ryga</a></li>
-     <li><a href="#" onclick="return toggleThis('.panel-4'); " id="fourthdot" style="color: #555; text-transform: uppercase;">Talinas</a></li>
-      <li><a href="#" onclick="return toggleThis('.panel-5'); " id="fifthhdot" style="color: #555; text-transform: uppercase;">Londonas</a></li>
+      <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
+          <a id="fifthhdot" onclick="return toggleThis('.panel-1')" href="#" style="text-transform: uppercase;">Vilnius</a>
+      </li>
+      <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k">
+          <a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#"  style=" text-transform: uppercase;">Klaipėda</a>
+      </li>
+      <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
+          <a id="thirddot"  onclick="return toggleThis('.panel-3')" href="#" style=" text-transform: uppercase;">Ryga</a></li>
+     <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
+        <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-4')" style="text-transform: uppercase;">Talinas</a></li>
+      <li onclick="return toggleCity('#fifthhdot_k'); " id="fifthhdot_k">
+          <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-5')"  style="text-transform: uppercase;">Londonas</a></li>
     </ul>
 
   </div>
@@ -158,8 +175,8 @@ background-color: rgb(255, 255, 255, 0); line-height: 2; height: 180px; margin-l
     padding-right: 20px;
     width:100%;
     height: 180px;
-"></p><b><i>VILNIUS<br></b></i>
-UAB FINANCIAL MANAGEMENT GROUP<br>
+"></p><b>VILNIUS<br></b>
+<i class="contact-brand-color">UAB FINANCIAL MANAGEMENT GROUP<br></i>
 Žalgirio g. 90, Verslo centras City, LT - 09303, Vilnius, Lietuva<br>
 Tel. + 370 5 2619477<br>
 Faks. +370 5 2503513<br>
@@ -180,7 +197,7 @@ E. paštas: info@fmg.lt<br>
      height: 180px;
 ">
         <br><b><i>KLAIPĖDA</i></b><br>
-      UAB FINANCIAL MANAGEMENT GROUP<br>
+      <i class="contact-brand-color">UAB FINANCIAL MANAGEMENT GROUP<br></i>
 Šilutės pl. 2-417, LT - 91111, Klaipėda, Lietuva<br>
 Tel. +370 46 257023<br>
 Faks. +370 5 2503513<br>
@@ -201,7 +218,7 @@ El. paštas: info@fmg.lt<br>
      height: 180px;
 ">
       <br><b><i>RYGA</b></i><br>
-SIA FMG LATVIA<br>
+<i class="contact-brand-color">SIA FMG LATVIA<br></i>
 Kr. Barona iela 32, LV-1011, Ryga, Latvija<br>
 Tel. +371 661 00399<br>
 Faks. +371 66100388<br>
@@ -222,7 +239,7 @@ El. paštas: info@fmggroup.eu<br>
      height: 180px;
 ">
          <br> <b><i>TALINAS</i></b><br>
-     OÜ FINANCIAL MANAGEMENT GROUP<br>
+    <i class="contact-brand-color"> OÜ FINANCIAL MANAGEMENT GROUP<br></i>
 Viru väljak 2, 10111, Talinas, Estija<br>
 Tel. +372 631 1923<br>
 Faks. +372 6311924<br>
@@ -244,8 +261,7 @@ El. paštas: info@fmg-tallinn.ee<br>
 ">
        <br> <b><i>LONDON</i></b><br>
 
-FMG LONDON LTD<br>
-13/14 NEW BOND STREET<br>
+<i class="contact-brand-color">FMG LONDON LTD<br></i>
 London<br>
 W1S 3SX<br>
 
@@ -259,7 +275,7 @@ W1S 3SX<br>
       <b><i> Prisijunkite prie mūsų!</b></i><br>
       Turite išsilavinimą finansų srityje, o gal vis dar studijuojate finansus, ekonomiką ar buhalterinę apskaitą?
 Mokate ir jums patinka analizuoti?
-Be to, esate draugiški, iniciatyvūs, turite patirties komandiniame darbe?
+Be to, esate draugiški, iniciatyvūs, turite patirties komandiniame darbe?<br><br>
 <b><i>Tuomet esate tie, kurių ieškome!</b></i>
 Mes siūlome puikias karjeros galimybes ir patrauklų kompensavimo paketą, įskaitant labai konkurencingą atlyginimą.
 Esame jauni, protingi, draugiški, darbštūs ir puikiai žinome, kaip smagiai leisti laiką kartu.
