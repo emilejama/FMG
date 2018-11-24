@@ -16,7 +16,7 @@
    <link href="css/main.css" rel="stylesheet">
     <style>
       .container-fluid{}
-     *<!-- { border: solid 1px black;}-->
+     *{ border: solid 1px black;}
 
 
     </style>
@@ -58,15 +58,43 @@ $(document).ready(function(){
 
   toggleThis(".panel-1");
 });
+
+function toggleCity(id, event){
+    console.log(id,event);
+    $(".activeCity").removeClass("activeCity");
+    $(id).addClass("activeCity");
+
+    return false;
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 </script>
 </head>
 
 <body>
+
+
+
 <!--navbar start -->
 <div class="container-fluid">
   <div class="row row justify-content-between">
   <div class="col-2">
-    <a class="navbar-brand" href="/index.html#"> <img src="img/Logo-1.jpg" width="185" height="75" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="/index.html#"> <img class="navbar-brand-img" src="img/Logo-1.jpg" width="185" height="75" class="d-inline-block align-top" alt="">
     </a>
   </div>
 
@@ -129,7 +157,8 @@ $(document).ready(function(){
     </ul>
   </div>
 <!--navbar end-->
-<div class="container-fluid image header">
+<div class="bg">
+
 
 
 <div class="container-fluid" >
@@ -137,14 +166,15 @@ $(document).ready(function(){
   <div class="row header-row row-paslaugos">
   <div class="col-sm-3 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: rgb(255, 255, 255, 0.8)">
 
-    <ul class="contacts-list-ul bullet " style="width: 100%;
-background-color: rgb(255, 255, 255, 0); line-height: 2; height: 180px; margin-left: 20px;
-">
-     <li><a href="#" onclick="return toggleThis('.panel-1')" id="firstdot" style="text-transform: uppercase;">Buhalterinė apskaita</a></li>
-      <li><a href="#" onclick="return toggleThis('.panel-2')" id="seconddot" style=" text-transform: uppercase;">Darbo užmokestis</a></li>
-     <li><a href="#" onclick="return toggleThis('.panel-3'); " id="thirddot" style=" text-transform: uppercase;">Įmonių finansai</a></li>
-     <li><a href="#" onclick="return toggleThis('.panel-4'); " id="fourthdot" style=" text-transform: uppercase;">Teisinės paslaugos</a></li>
-      <li><a href="#" onclick="return toggleThis('.panel-5'); " id="fifthhdot" style=" text-transform: uppercase;">Audito paslaugos:</a></li>
+    <ul class="contacts-list-ul bullet ">
+     <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" > <a id="fifthhdot" onclick="return toggleThis('.panel-1')" >Buhalterinė apskaita</a></li>
+      <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k"><a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#" >Darbo užmokestis</a></li>
+     <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
+          <a id="thirddot"  onclick="return toggleThis('.panel-3')" href="#" >Įmonių finansai</a></li>
+      <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
+        <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-4')" >Teisinės paslaugos</a></li>
+     <li onclick="return toggleCity('#fifthhdot_k'); " id="fifthhdot_k">
+          <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-5')"  >Audito paslaugos</a></li>
     </ul>
 
   </div>
@@ -223,9 +253,13 @@ background-color: rgb(255, 255, 255, 0); line-height: 2; height: 180px; margin-l
   </div>
 </div>
 </div>
-</div>
- <!-- Footer -->
 
+ <!-- Footer -->
+</div>
+
+<div class="container-fluid my-btn">
+  <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">Į viršų</button>
+</div>
   <!-- Copyright -->
     <footer class="container-fluid footer-copyright text-center py-3">© 2018 Copyright: FMG Financial Management Group
   <!-- Copyright -->

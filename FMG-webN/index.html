@@ -16,7 +16,7 @@
    <link href="css/main.css" rel="stylesheet">
     <style>
       .container-fluid{}
-     * <!--{ border: solid 1px black;}
+     * { border: solid 1px black;}
 -->
 
     </style>
@@ -58,15 +58,35 @@ $(document).ready(function(){
 
   toggleThis(".panel-1");
 });
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 </script>
 </head>
 
 <body>
+
+
+
 <!--navbar start -->
 <div class="container-fluid">
   <div class="row row justify-content-between">
   <div class="col-2">
-    <a class="navbar-brand" href="/index.html#"> <img src="img/Logo-1.jpg" width="185" height="75" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="/index.html#"> <img class="navbar-brand-img" src="img/Logo-1.jpg" width="185" height="75" class="d-inline-block align-top" alt="">
     </a>
   </div>
 
@@ -128,12 +148,14 @@ $(document).ready(function(){
      </li>
     </ul>
   </div>
+
 <!--navbar end-->
-<div class="container-fluid image header" >
+ <a class="top" name="top"></a>
+<div class="bg">
  <!-- <img class="responsive-image header-image" src="img/newheader.jpg">-->
 
 <!--<div class="container-fluid header" >-->
-  <div class="row header-row">
+  <div class=" row header-row">
   <div class="col-sm-4 intro-text header-content">
     <p class="intro-info">
       Nuo 1999 m. FMG specializuojasi apskaitos, audito, verslo ir teisinių paslaugų srityje. Turime išskirtines kompetencijas apskaitos tvarkymui pagal tarptautinius apskaitos standartus (IFRS), konsolidavimui, stambių įmonių apskaitos vedimui (virš 300 darbuotojų) bei ilgalaikes kompetencijas prekybos, gamybos, paslaugų ir vitualių mokėjimo platformų apskaitos aptarnavime. Galime suteikti įmonėms registracijos adresą Lietuvoje (ES), pasirūpinti įmonės steigimu ir priežiūra.<br>FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Klaipėdoje, Rygoje, Taline ir Londone.
@@ -161,14 +183,14 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
   <div class="container-fluid col-sm-4 col">
     <div class="row">
       <div class="col-sm-5" >
-    <img class="img-responsive" id="aruno_pic" src="img/arunas-new.jpg" style= "height: auto; max-width: 100%; border-radius: 50%; margin-top: 20px;" class="img-fluid">
+    <img class="img-responsive" id="aruno_pic" src="img/arunas-new.jpg" style= "height: auto; max-width: 100%; border-radius: 50%; margin-top: 20px;" class="img-fluid"><p class="img-text mobile-only-quote">„Rasti naujus,<br> nestandartinius starteginius<br> veiklos vystymo sprendimus“<br><b class=""> Arūnas Šikšta</b></p>
       </div>
-      <div class="col-sm-7 " >
-       <p class="img-text ">„Rasti naujus, nestandartinius starteginius veiklos vystymo sprendimus“<br><b class=""> Arūnas Šikšta</b></p>
+      <div class="container-fluid col-sm-7 desk-only-quote" >
+       <p class="img-text">„Rasti naujus, nestandartinius starteginius veiklos vystymo sprendimus“<br><b class=""> Arūnas Šikšta</b></p>
        </div>
     </div>
      <div class="w-100"></div>
-      <div class="col-sm biography" >
+      <div class="container-fluid col-sm biography" >
         30 metų  karjera tarptautinėje vadyboje, finansų ir telekomunkacijų srityse, steigiant ir reorganizuojant tokias įmones kaip  AB SWEDBANK, („Hansabank“ Lietuva valdybos pirmininkas, vadovavęs valstybinio Lietuvos taupomojo banko ir „Hansabank“ susijungimui), AB TEO LT (Generalinis direktorius, vadovavęs „Lietuvos telekomas“ reorganizacijai į TEO LT ), Vienos ekonomikos universiteto (Austrija) alumni, įgyjęs tarptautinį MBA laipsnį.
       </div>
   </div>
@@ -176,17 +198,22 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
   </div>
   </div>
 <!--</div>--->
-</div>
-<div class="container-fluid">
 
+
+
+<!-- divas nuo .bg-->
 </div>
- <!-- Footer -->
-<div class="container-fluid">
-  <!-- Copyright -->
-    <footer class="footer-copyright text-center py-3">© 2018 Copyright: FMG Financial Management Group
+
+
+
+<footer class="footer-copyright text-center py-3">© 2018 Copyright: FMG Financial Management Group
   <!-- Copyright -->
   </footer>
+
+<div class="container-fluid my-btn">
+  <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">Į viršų</button>
 </div>
+
 <!-- Footer -->
  <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
