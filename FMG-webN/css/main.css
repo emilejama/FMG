@@ -351,7 +351,17 @@ display: none;
 }
 
 
+#vilnius-img {
+ background-image: url("../img/vilnius-saturation-newlighter.jpg");
 
+    /* Full height */
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -375,6 +385,7 @@ display:none;
 .my-btn {
 display: none;
 }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -403,8 +414,8 @@ width:100px;
 height: 100px;
 }
 .navbar-brand-img {
-width: 140px;
-height: 55px;
+width: 150px;
+height: 60px;
 }
 .dotstyle{
 
@@ -485,5 +496,6 @@ font-size: 14px;
 .bg {
 background:none;
 }
+
 
 }
