@@ -1,295 +1,232 @@
 footer {
-height: auto;
-background-color: #FFF;
-color: #000;
+    height: auto;
+    background-color: rgb (255, 255, 255, 0.8);
+    color: #FFF;
+    font-size: 14px;
 }
-
 .header-image {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 }
-
 .intro-text {
-color:#000;
-font-size: 16px;
-
+    color:#000;
+    font-size: 16px;
 }
-
-
-
-.header-content {
-padding-top: 20px;
+.intro-info {
+    margin-left: 15px;
 }
-
 .col-sm-4 {
-background-color: rgb(255,255,255, 0.9)
+    background-color: rgb(255,255,255, 0.9)
 }
 .col-sm-8 {
-background-color: rgb(255,255,255, 0.9)
+    background-color: rgb(255,255,255, 0.9)
 }
 .col-sm-12 {
-background-color: rgb(255,255,255, 0.9)
+    background-color: rgb(255,255,255, 0.9)
 }
 .col-sm-3 {
-background-color: rgb(255,255,255, 0.9)
-
+    background-color: rgb(255,255,255, 0.9)
 }
 .image {
-position: relative;
-
+    position: relative;
 }
-
-
 .header-image {
-position: relative;
-text-align: center;
+    position: relative;
+    text-align: center;
 }
-
 .header-row {
-
-top:10%;
+    top:10%;
 }
-
-
 .e_mail {
-color: rgb(84, 141, 212);
+    color: rgb(84, 141, 212);
 }
-
 .img-text {
-color: #555;
-margin-top: 30px;
-margin-right: 10px;
-float: right;
-position: relative;
-font-style: italic;
-font-size: 15px;
+    color: #555;
+    margin-top: 30px;
+    margin-right: 10px;
+    float: right;
+    position: relative;
+    font-style: italic;
+    font-size: 15px;
 }
-
 .intro-panel {
-margin-top: 20px;
-color: #555;
+    color: #555;
 }
 .dotstyle ul {
-	position: relative;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	cursor: default;
-  margin-bottom: 20px;
-
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+    margin-bottom: 20px;
 }
-
 .dotstyle li {
-	position: relative;
-	display: block;
-	float: left;
-	margin: 0 16px;
-	width: 16px;
-	height: 16px;
-	cursor: pointer;
-
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
 }
-
 .dotstyle li a {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	outline: none;
-	border-radius: 50%;
-	text-indent: -999em;
-	cursor: pointer; /* make the text accessible to screen readers */
-	position: absolute;
-
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    text-indent: -999em;
+    cursor: pointer; /* make the text accessible to screen readers */
+    position: absolute;
 }
-
 /* Fill up */
 .dotstyle-fillup li a {
-	overflow: hidden;
-	background-color: #FFF;
-	box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
-	transition: background 0.3s;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
+    transition: background 0.3s;
 }
-
 .dotstyle-fillup li a::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	height: 0;
-	left: 0;
-	width: 100%;
-	background-color: #FFF;
-	box-shadow: 0 0 1px #fff;
-	transition: height 0.3s;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 0 1px #fff;
+    transition: height 0.3s;
 }
-
 .dotstyle-fillup li a:hover,
 .dotstyle-fillup li a:focus {
 	  background-color: rgb(84, 141, 212);
 }
-
 .dotstyle-fillup li.current a::after {
-	height: 100%;
-  }
-
+	  height: 100%;
+}
 .dotstyle {
-text-align: center;
-
+    text-align: center;
 }
-
 .side-panel {
-background-color: rgb(219,228,243,0.7);
+    background-color: rgb(219,228,243,0.7);
 }
-
 .panel {
-display: none;
-color: #000;
+    display: none;
+    color: #000;
 }
-
 .dot-fixed {
-height: 54%;
+    height: 54%;
 }
-
 .dot-fixed-services {
-height: 70%;
+    height: 70%;
 }
-
 .activePanel{
-  display:inline-block;
-  }
-
-
+    display:inline-block;
+}
 .nav-link {
-color: #555;
-text-transform:uppercase;
-font-size: 13px;
+    color: #555;
+    text-transform:uppercase;
+    font-size: 13px;
 }
-
 .navbar-light .navbar-nav .nav-link:hover {
-color:  #2B4767;
+    color:  #2B4767;
 }
-
 .navbar-light .navbar-nav .active > .nav-link{
-color:   rgb(84, 141, 212);
-background-color: #DBE4F3;
+    color:   rgb(84, 141, 212);
+    background-color: #DBE4F3;
 }
-
 .navbar-expand-lg{
-max-width: 100%;
-flex: 0 0 60%;
+    max-width: 100%;
+    flex: 0 0 60%;
 }
-
 .navbar-toggler {
-border: none;
-outline: none;
+    border: none;
+    outline: none;
 /*box-shadow: 1px 5px 5px rgb(84, 141, 212);*/
 }
-
 .navbar-toggler:hover {
-border: none;
-outline: none;
+    border: none;
+    outline: none;
 }
-
 .navbar-toggler:focus {
-border: none;
-outline: none;
+    border: none;
+    outline: none;
 }
-
-
 /*.dark-nav-button {
 background-color:  #2B4767;
 }
-
 .light-nav-button {
 background-color: #DBE4F3;
 }*/
-
-
 .nav-item {
-letter-spacing: 1,5;
+    letter-spacing: 1,5;
 }
-
 .middle-panel {
-background-color: rgb(219,228,243,0.9);
+    background-color: rgb(219,228,243,0.9);
 }
-
 .biography {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-
 .italic-style {
-font-style: italic;
-margin-top: 15px;
-font-size: 15px;
-color: #555;
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #555;
 }
-
 .contacts {
-background-color: rgb(255,255,255,0.9);
-text-align: center;
-
+    background-color: rgb(255,255,255,0.9);
+    text-align: center;
 }
-
 .contacts-info {
-margin-top: 100px;
-
+    margin-top: 100px;
 }
 .contacts-list-ul{
-margin-top: 120px;
-font-size: 14px;
-color: #555;
-width: 100%;
-background-color: rgb(255, 255, 255, 0);
- line-height: 2.5;
-  height: 180px;
+    margin-top: 120px;
+    font-size: 14px;
+    color: rgb(84, 141, 212);
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0);
+    line-height: 2.5;
+    height: 180px;
 }
-
 ul.contacts-list-ul.bullet li a {
-margin-top: 120px;
-font-size: 14px;
-color: #555;
-text-transform: uppercase;
+    margin-top: 120px;
+    font-size: 14px;
+    color: rgb(84, 141, 212);
+    text-transform: uppercase;
 }
 ul.contacts-list-ul.bullet li a:hover{
-margin-top: 120px;
-font-size: 14px;
-color:  rgb(84, 141, 212);
-
+    margin-top: 120px;
+    font-size: 14px;
+    color:  rgb(84, 141, 212);
 }
-
-
 .intro-info {
-margin-top: 50px;
+    margin-top: 30px;
 }
-
 .middle-info {
-margin-top: 70px;
+    margin-top: 30px;
 }
-
 .bullet {
-list-style: none;
+    list-style: none;
 }
-
 .bullet-colour {
-list-style: none; /* Remove default bullets */
+    list-style: none; /* Remove default bullets */
 }
-
 .bullet-colour li::before {
- content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: rgb(84, 141, 212); /* Change the color */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-  font-weight: bold; /* If you want it to be bold */
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: rgb(84, 141, 212); /* Change the color */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+      font-weight: bold; /* If you want it to be bold */
 }
-
 body, html {
     height: 100%;
     font-family: Arial, Helvetica, Roboto, "Open Sans", sans-serif;
     font-size: 16px;
 }
-
 .header {
    /* background-image: url(../img/newheader.jpg);*/
     height: 600px;
@@ -297,45 +234,27 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .bg {
-    /* The image used */
     background-image: url("../img/backgroundmain.jpg");
-
-    /* Full height */
-
-
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .row-paslaugos {
-margin-left: -30px;
+    margin-left: -30px;
 }
-
 .contact-brand-color {
-color:   rgb(84, 141, 212);
-font-size: 14px;
+    color:   rgb(84, 141, 212);
+    font-size: 14px;
 }
-
-
-
-
 .activeCity {
-background-color: rgb(255,255,255, 0.6);
-
+    background-color: rgb(255,255,255, 0.7);
 }
-
 .mobile-only-quote {
-font-size: 14px;
-
+    font-size: 14px;
 }
-
-
 .text-block {
-position: absolute;
+    position: absolute;
     top: 120px;
     left: 0px;
     background-color: rgb(255,255,255,0.7);
@@ -345,22 +264,8 @@ position: absolute;
     width:100%;
     height: 180px;
 }
-
 .top {
-display: none;
-}
-
-
-#vilnius-img {
- background-image: url("../img/vilnius-saturation-newlighter.jpg");
-
-    /* Full height */
-
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: none;
 }
 
 
@@ -372,130 +277,116 @@ display: none;
 /*.mobile-only-quote {
 display:none;*/
 .mobile-only-quote {
-display: none;
+    display: none;
 }
 .header-row {
-margin-top: 50px;
-margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-
 #myBtn {
-display:none;
+    display:none;
 }
 .my-btn {
-display: none;
+    display: none;
 }
-
 }
 
 @media only screen and (max-width: 450px) {
 .intro-info {
-font-size: 14px;
-margin-top: 5px;
-
+    font-size: 14px;
+    margin-top: 5px;
 }
 .italic-style {
-font-size: 14px;
-margin-top: 5px;
-
+    font-size: 14px;
+    margin-top: 5px;
 }
 .panel {
-font-size: 14px;
-
+    font-size: 14px;
 }
 .desk-only-quote {
-display:none;
+    display:none;
 }
 .desk-only-quote {
-display: none;
+    display: none;
 }
 #aruno_pic {
-width:100px;
-height: 100px;
+    width:100px;
+    height: 100px;
 }
 .navbar-brand-img {
-width: 150px;
-height: 60px;
-}
-.dotstyle{
-
+    width: 150px;
+    height: 60px;
 }
 .col-sm-5 {
-
-margin-left: 15px;
+    margin-left: 15px;
 }
-
 footer {
-background-color: rgb(255, 255, 255, 0.8);
-font-size: 14px;
-
-   bottom:0;
-   width:100%;
+    background-color: rgb(255, 255, 255, 0.8);
+    font-size: 12px;
+    color: #777;
+    bottom:0;
+    width:100%;
 }
-
 .nav-link {
-background-color: #FFF;
-text-align: center;
+    background-color: #FFF;
+    text-align: center;
 }
 .nav-link:hover {
-background-color: rgb(84, 141, 212, 0.8);
-color: #FFF;
+    background-color: rgb(84, 141, 212, 0.8);
+    color: #FFF;
 }
 .bg {
-background-repeat: repeat;
+    background-repeat: repeat;
 }
 .header-row {
-
-top:0;
-
+    top:0;
 }
 .intro-panel {
-margin-top: 0;
-color: #555;
+    margin-top: 0;
+    color: #555;
 }
 body {
-padding-left: 5px;
-padding-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
 .biography{
-font-size: 14px;
+    font-size: 14px;
 }
 #myBtn {
-position: fixed;
-right: 13px;
-bottom: 70px;
-background-color: #FFF;
-color: rgb(84, 141, 212);
-opacity: 0.9;
-box-shadow: 1px 5px 5px rgb(84, 141, 212);
-outline: none;
-border: none;
-font-size: 12px;
+    position: fixed;
+    right: 13px;
+    bottom: 70px;
+    background-color: #FFF;
+    color: rgb(84, 141, 212);
+    opacity: 0.9;
+    box-shadow: 1px 5px 5px rgb(84, 141, 212);
+    outline: none;
+    border: none;
+    font-size: 12px;
 }
-
 .contacts-list-ul{
-margin-top: 15px;
-color: #333;
-text-align: center;
-line-height: 2;
-  height: auto;
+    margin-top: 15px;
+    color: #333;
+    text-align: center;
+    line-height: 2;
+    height: auto;
 }
 ul.contacts-list-ul.bullet li a {
-font-size: 14px;
-text-transform:capitalize;
+    font-size: 14px;
+    text-transform:capitalize;
 }
 ul.contacts-list-ul.bullet li a:hover{
-text-transform:capitalize;
-font-size: 14px;
-color:  rgb(84, 141, 212);
+    text-transform:capitalize;
+    font-size: 14px;
+    color:  rgb(84, 141, 212);
 }
 .intro-text {
-font-size: 14px;
+    font-size: 14px;
 }
 .bg {
-background:none;
+    background:none;
 }
+
 
 
 }

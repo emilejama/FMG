@@ -22,31 +22,7 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-  /*
-$(document).ready(function(){
-    $("#firstdot").click(function(){
-        $(".panel-1").toggle();
-    });
-});
 
-$(document).ready(function(){
-    $("#seconddot").click(function(){
-        $(".panel-2").toggle();
-    });
-});
-
-$(document).ready(function(){
-    $("#thirddot").click(function(){
-        $(".panel-3").toggle();
-    });
-});
-
-$(document).ready(function(){
-    $("#fourthdot").click(function(){
-        $(".panel-4").toggle();
-    });
-});
-*/
 function toggleThis(id, event){
     console.log(id,event);
     $(".activePanel").removeClass("activePanel");
@@ -89,8 +65,7 @@ function topFunction() {
 
 <body>
 
-
-  <div class="bg">
+<div class="bg">
 <!--navbar start -->
 <div class="container-fluid">
   <div class="row row justify-content-between">
@@ -158,121 +133,110 @@ function topFunction() {
     </ul>
   </div>
 <!--navbar end-->
-<div class="container-fluid image header">
-
 
 <!--<div class="container-fluid header" >-->
+<div class="container-fluid" >
   <div class="row header-row">
     <div class="col-sm-2 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: rgb(255, 255, 255, 0.8)">
-
-    <ul class="contacts-list-ul bullet">
-      <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
-          <a id="fifthhdot" onclick="return toggleThis('.panel-1')" href="#" >Vilnius</a>
-      </li>
-      <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k">
-          <a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#" >Klaipėda</a>
-      </li>
-      <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
-          <a id="thirddot"  onclick="return toggleThis('.panel-3')" href="#" >Ryga</a></li>
-     <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
-        <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-4')" >Talinas</a></li>
-      <li onclick="return toggleCity('#fifthhdot_k'); " id="fifthhdot_k">
-          <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-5')"  >Londonas</a></li>
-    </ul>
-
-  </div>
+       <ul class="contacts-list-ul bullet">
+          <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
+              <a id="fifthhdot" onclick="return toggleThis('.panel-1')" href="#" >Vilnius</a>
+          </li>
+          <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k">
+              <a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#" >Klaipėda</a>
+          </li>
+          <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
+              <a id="thirddot"  onclick="return toggleThis('.panel-3')" href="#" >Ryga</a></li>
+          <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
+              <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-4')" >Talinas</a></li>
+          <li onclick="return toggleCity('#fifthhdot_k'); " id="fifthhdot_k">
+              <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-5')"  >Londonas</a></li>
+       </ul>
+    </div>
     <div class="col-sm-6 contacts " style="padding-left: 0;">
-<div class="panel panel-1 ">
- <img  src="img/vilnius-saturation-newlighter.jpg" class="contacts-picture img-responsive ">
-
-    <div class="text-block" >
-    <b>VILNIUS<br></b>
-<i class="contact-brand-color">UAB FINANCIAL MANAGEMENT GROUP<br></i>
-Žalgirio g. 90, Verslo centras City, LT - 09303, Vilnius, Lietuva<br>
-Tel. + 370 5 2619477<br>
-Faks. +370 5 2503513<br>
-E. paštas: info@fmg.lt<br>
-</div>
+       <div class="panel panel-1 ">
+           <img  src="img/vilnius-saturation-newlighter.jpg" class="contacts-picture img-responsive ">
+               <div class="text-block" id="vilnius" >
+                    <b>VILNIUS<br></b>
+                    <i class="contact-brand-color">UAB FINANCIAL MANAGEMENT GROUP<br></i>
+                        Žalgirio g. 90, Verslo centras City, LT - 09303, Vilnius, Lietuva<br>
+                        Tel. + 370 5 2619477<br>
+                        Faks. +370 5 2503513<br>
+                        E. paštas: info@fmg.lt<br>
+               </div>
+       </div>
+       <div class="panel panel-2 ">
+           <img  src="img/klaipeda-lightest.jpg" class="contacts-picture img-responsive">
+              <div class="text-block">
+                 <br><b><i>KLAIPĖDA</i></b><br>
+                 <i class="contact-brand-color">UAB FINANCIAL MANAGEMENT GROUP<br></i>
+                      Šilutės pl. 2-417, LT - 91111, Klaipėda, Lietuva<br>
+                      Tel. +370 46 257023<br>
+                      Faks. +370 5 2503513<br>
+                      El. paštas: info@fmg.lt<br>
+               </div>
+       </div>
+       <div class="panel panel-3 ">
+           <img  src="img/riga-light.jpg" class="contacts-picture img-responsive">
+               <div class="text-block" >
+                  <br><b><i>RYGA</b></i><br>
+                  <i class="contact-brand-color">SIA FMG LATVIA<br></i>
+                        Kr. Barona iela 32, LV-1011, Ryga, Latvija<br>
+                        Tel. +371 661 00399<br>
+                        Faks. +371 66100388<br>
+                        El. paštas: info@fmggroup.eu<br>
+               </div>
+       </div>
+       <div class="panel panel-4 ">
+          <img  src="img/tallinas-light.jpg" class="contacts-picture img-responsive">
+               <div class="text-block">
+                 <br> <b><i>TALINAS</i></b><br>
+                 <i class="contact-brand-color"> OÜ FINANCIAL MANAGEMENT GROUP<br></i>
+                        Viru väljak 2, 10111, Talinas, Estija<br>
+                        Tel. +372 631 1923<br>
+                        Faks. +372 6311924<br>
+                        El. paštas: info@fmg-tallinn.ee<br>
+               </div>
+       </div>
+       <div class="panel panel-5 ">
+           <img  src="img/london3-lighter.jpg" class="contacts-picture img-responsive">
+               <div class="text-block">
+                   <br> <b><i>LONDON</i></b><br>
+                   <i class="contact-brand-color">FMG LONDON LTD<br></i>
+                          London<br>
+                          W1S 3SX<br>
+               </div>
+       </div>
     </div>
-     <div class="panel panel-2 ">
- <img  src="img/klaipeda-lightest.jpg" class="contacts-picture img-responsive">
-
-    <div class="text-block">
-        <br><b><i>KLAIPĖDA</i></b><br>
-      <i class="contact-brand-color">UAB FINANCIAL MANAGEMENT GROUP<br></i>
-Šilutės pl. 2-417, LT - 91111, Klaipėda, Lietuva<br>
-Tel. +370 46 257023<br>
-Faks. +370 5 2503513<br>
-El. paštas: info@fmg.lt<br>
-</div>
+    <div class="col-sm-4 intro-text header-content">
+       <p><b><i> Prisijunkite prie mūsų!</b></i><br>
+              Turite išsilavinimą finansų srityje, o gal vis dar studijuojate finansus, ekonomiką ar buhalterinę apskaitą?
+              Mokate ir jums patinka analizuoti?
+              Be to, esate draugiški, iniciatyvūs, turite patirties komandiniame darbe?<br><br>
+              <b><i>Tuomet esate tie, kurių ieškome!</b></i><br>
+              Mes siūlome puikias karjeros galimybes ir patrauklų kompensavimo paketą, įskaitant labai konkurencingą atlyginimą.
+              Esame jauni, protingi, draugiški, darbštūs ir puikiai žinome, kaip smagiai leisti laiką kartu.
+              Jei susidomėjote – siųskite savo CV bei motyvacinį laišką elektroniniu paštu <b class="e_mail"><i>info@fmg.lt</b></i>
+              Nekantriai laukiame susitikimo!
+              Konfidencialumą garantuojame.
+       </p>
     </div>
-    <div class="panel panel-3 ">
- <img  src="img/riga-light.jpg" class="contacts-picture img-responsive">
-
-    <div class="text-block" >
-      <br><b><i>RYGA</b></i><br>
-<i class="contact-brand-color">SIA FMG LATVIA<br></i>
-Kr. Barona iela 32, LV-1011, Ryga, Latvija<br>
-Tel. +371 661 00399<br>
-Faks. +371 66100388<br>
-El. paštas: info@fmggroup.eu<br>
-</div>
-    </div>
-     <div class="panel panel-4 ">
- <img  src="img/tallinas-light.jpg" class="contacts-picture img-responsive">
-
-    <div class="text-block">
-         <br> <b><i>TALINAS</i></b><br>
-    <i class="contact-brand-color"> OÜ FINANCIAL MANAGEMENT GROUP<br></i>
-Viru väljak 2, 10111, Talinas, Estija<br>
-Tel. +372 631 1923<br>
-Faks. +372 6311924<br>
-El. paštas: info@fmg-tallinn.ee<br>
-</div>
-    </div>
-     <div class="panel panel-5 ">
-        <img  src="img/london3-lighter.jpg" class="contacts-picture img-responsive">
-
-    <div class="text-block">
-       <br> <b><i>LONDON</i></b><br>
-
-<i class="contact-brand-color">FMG LONDON LTD<br></i>
-London<br>
-W1S 3SX<br>
-
-    </div>
-</div>
-
-
-      </div>
-  <div class="col-sm-4 intro-text header-content">
-    <p>
-      <b><i> Prisijunkite prie mūsų!</b></i><br>
-      Turite išsilavinimą finansų srityje, o gal vis dar studijuojate finansus, ekonomiką ar buhalterinę apskaitą?
-Mokate ir jums patinka analizuoti?
-Be to, esate draugiški, iniciatyvūs, turite patirties komandiniame darbe?<br><br>
-<b><i>Tuomet esate tie, kurių ieškome!</b></i>
-Mes siūlome puikias karjeros galimybes ir patrauklų kompensavimo paketą, įskaitant labai konkurencingą atlyginimą.
-Esame jauni, protingi, draugiški, darbštūs ir puikiai žinome, kaip smagiai leisti laiką kartu.
-Jei susidomėjote – siųskite savo CV bei motyvacinį laišką elektroniniu paštu <b class="e_mail"><i>info@fmg.lt</b></i>
-Nekantriai laukiame susitikimo!
-Konfidencialumą garantuojame.
-
-    </p>
-  </div>
 </div>
 </div>
  <!-- Footer -->
-</div>
 
-<div class="container-fluid my-btn">
-  <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">Į viršų</button>
-</div>
+
+
   <!-- Copyright -->
     <footer class="footer-copyright text-center py-3">© 2018 Copyright: FMG Financial Management Group
   <!-- Copyright -->
   </footer>
 
+</div>
+
+<div class="container-fluid my-btn">
+  <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">Į viršų</button>
+</div>
 <!-- Footer -->
  <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
