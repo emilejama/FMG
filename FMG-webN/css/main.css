@@ -269,8 +269,28 @@ body, html {
 }
 
 
+ul.nav.nav-tabs {
+background-color: rgb(84, 141, 212);
+height: 40px;
+}
 
+ul.nav.nav-tabs > li > a {
+color: #FFF;
+padding: 15px;
+font-size: 16px;
+}
 
+ul.nav.nav-tabs > li > a:hover {
+color: #333;
+background-color: rgb(255,255,255,0.8);
+padding: 15px;
+font-size: 16px;
+}
+
+div.container {
+padding-left: 0;
+padding-right: 0;
+}
 
 
 @media only screen and (min-width: 451px) {
@@ -280,14 +300,17 @@ display:none;*/
     display: none;
 }
 .header-row {
-    margin-top: 50px;
-    margin-bottom: 50px;
+   /* margin-top: 50px;
+    margin-bottom: 50px;*/
 }
 #myBtn {
     display:none;
 }
 .my-btn {
     display: none;
+}
+.mobile {
+display:none;
 }
 }
 
@@ -382,11 +405,33 @@ ul.contacts-list-ul.bullet li a:hover{
 }
 .intro-text {
     font-size: 14px;
+    margin-right: 15px;
 }
 .bg {
     background:none;
 }
-
-
-
+.middle-panel {
+margin-right: 15px;
+margin-left: 15px;
+}
+.desktop {
+display:none;
+}
+.col-sm-9 {
+background-color: #FFF;
+}
+.mobile {
+margin-left: 0;
+}
+ul.nav.nav-tabs > li > a {
+color: #FFF;
+padding: 5px;
+font-size: 14px;
+}
+ul.nav.nav-tabs > li > a:hover {
+color: #333;
+background-color: rgb(255,255,255,0.8);
+padding: 5px;
+font-size: 14px;
+}
 }
