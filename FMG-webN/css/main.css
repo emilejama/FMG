@@ -4,6 +4,9 @@ footer {
     color: #555;
     font-size: 14px;
 }
+div.row.header-row {
+height: 500px;
+}
 .header-image {
     width: 100%;
     height: auto;
@@ -196,16 +199,22 @@ background-color: #DBE4F3;
     line-height: 2.5;
     height: 180px;
 }
+ul.contacts-list-ul.bullet {
+padding-left: 0;
+text-align: center;
+}
 ul.contacts-list-ul.bullet li a {
     margin-top: 120px;
     font-size: 14px;
     color: rgb(84, 141, 212);
     text-transform: uppercase;
+
 }
 ul.contacts-list-ul.bullet li a:hover{
     margin-top: 120px;
     font-size: 14px;
     color:  rgb(84, 141, 212);
+
 }
 .intro-info {
     margin-top: 30px;
@@ -307,9 +316,22 @@ color: #333;
 text-decoration: none;
 }
 
+div.col-sm-9.middle-panel {
 
+position: relative;
+}
 
-
+div.dotstyle.dotstyle-fillup {
+ position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+.index-page {
+overflow: hidden;
+}
+div.col-sm-6.contacts {
+overflow: hidden;
+}
 div.container {
 padding-left: 0;
 padding-right: 0;
@@ -317,9 +339,12 @@ margin-left: 0;
 margin-right: 0;
 max-width: 100%;
 }
-
-
-
+div.col-sm-4.intro-text.header-content-whitebg {
+padding-top: 30px;
+}
+p.italic-style.desktop {
+padding-top: 50px;
+}
 
 
 
@@ -493,5 +518,7 @@ font-size: 14px;
 .nav-desktop {
 display: none;
 }
-
+div.row.header-row {
+height: auto;
+}
 }

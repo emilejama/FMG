@@ -16,7 +16,7 @@
    <link href="css/main.css" rel="stylesheet">
     <style>
       .container-fluid{}
-     * { border: solid 1px black;}
+     * <!--{ border: solid 1px black;}-->
 -->
 
     </style>
@@ -33,6 +33,14 @@ function toggleThis(id, event){
 $(document).ready(function(){
 
   toggleThis(".panel-1");
+  var currentLocation = window.location.hash.replace("#","");
+  console.log('trololo',currentLocation);
+  if(currentLocation)
+
+  $(".active.show").removeClass("active show");
+  $("."+currentLocation).addClass("active show").click();
+  $("."+currentLocation).parent().addClass("active");
+
 });
 
 function toggleCity(id, event){
@@ -77,16 +85,16 @@ function topFunction() {
     <img class="navbar-brand-img" src="img/Logo-1.jpg" width="185" height="75"  alt="">
   </a>
    <ul class="nav nav-tabs nav-desktop">
-    <li class="active"><a data-toggle="tab" href="#home" class="active show">Apie Mus</a></li>
-    <li><a class="nav-middle" data-toggle="tab" href="#menu1">Paslaugos</a></li>
-    <li><a data-toggle="tab" href="#menu2">Kontaktai/Karjera</a></li>
+    <li class="active"><a data-toggle="tab" href="#home" onclick ="window.location.hash = '';" class="active show">Apie Mus</a></li>
+    <li><a class="nav-middle paslaugos" data-toggle="tab" onclick ="window.location.hash = 'paslaugos';" href="#paslaugos">Paslaugos</a></li>
+    <li><a data-toggle="tab" class="kontaktai" onclick ="window.location.hash = 'kontaktai';" href="#kontaktai">Kontaktai/Karjera</a></li>
   </ul>
 </nav>
 
   <ul class="nav nav-tabs nav-mobile-device">
     <li class="active"><a data-toggle="tab" href="#home" class="active show">Apie Mus</a></li>
-    <li><a class="nav-middle" data-toggle="tab" href="#menu1">Paslaugos</a></li>
-    <li><a data-toggle="tab" href="#menu2">Kontaktai/Karjera</a></li>
+    <li><a class="nav-middle paslaugos" data-toggle="tab" href="#paslaugos">Paslaugos</a></li>
+    <li><a data-toggle="tab" class="kontaktai" href="#kontaktai">Kontaktai/Karjera</a></li>
   </ul>
 
   <div class="tab-content">
@@ -144,7 +152,7 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
 
       </div>
     </div>
-    <div id="menu1" class="tab-pane fade">
+    <div id="paslaugos" class="tab-pane fade">
       <div class="second-page">
         <div class="container-fluid italic-style middle-panel mobile">
          "Tikime, kad integruoti mūsų sprendimai padeda užtikrinti įmonių ekonominį augimą ir verslo sėkmę. Siekdami klientams sukurti maksimalią pridėtinę vertę, siūlome platų paslaugų spektrą:"
@@ -154,7 +162,7 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
      <div class="col-sm-3 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: #00224B;">
        <ul class="contacts-list-ul bullet ">
         <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
-           <a id="fifthhdot" onclick="return toggleThis('.panel-1')" >Buhalterinė apskaita</a></li>
+           <a id="fifthhdot" onclick="return toggleThis('.panel-1')" style="cursor: pointer;" >Buhalterinė apskaita</a></li>
         <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k">
            <a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#" >Darbo užmokestis</a></li>
         <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
@@ -224,7 +232,7 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
                   <li>Pridėtinės vertės mokesčio grąžinimai iš vietinių biudžetų bei kitų ES šalių</li>
                </ul>
             </div>
-                 <div class="dotstyle dotstyle-fillup">
+            <!--     <div class="dotstyle dotstyle-fillup">
                      <ul>
                          <li><a href="#" onclick="return toggleThis('.panel-1')" id="firstdot"></a></li>
                          <li><a href="#" onclick="return toggleThis('.panel-2'); " id="fourthdot"></a></li>
@@ -232,29 +240,29 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
                          <li><a href="#" onclick="return toggleThis('.panel-4'); " id="fourthdot"></a></li>
                          <li><a href="#" onclick="return toggleThis('.panel-5')" id="firstdot"></a></li>
                      </ul>
-                 </div>
+                 </div> -->
              </div>
   </div>
 </div>
       </div>
     </div>
-    <div id="menu2" class="tab-pane fade">
+    <div id="kontaktai" class="tab-pane fade">
       <div class="third-page">
 <div class="container-fluid" >
   <div class="row header-row">
     <div class="col-sm-2 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: #00224B;">
        <ul class="contacts-list-ul bullet">
-          <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
+          <li onclick="return toggleCity('#firstdot_kl')" class="activeCity" id="firstdot_kl" >
               <a id="fifthhdot" onclick="return toggleThis('.panel-1')" href="#" >Vilnius</a>
           </li>
-          <li onclick="return toggleCity('#seconddot_k')"  id="seconddot_k">
+          <li onclick="return toggleCity('#seconddot_kl')"  id="seconddot_kl">
               <a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#" >Klaipėda</a>
           </li>
-          <li onclick="return toggleCity('#thirddot_k'); "  id="thirddot_k" >
+          <li onclick="return toggleCity('#thirddot_kl'); "  id="thirddot_kl" >
               <a id="thirddot"  onclick="return toggleThis('.panel-3')" href="#" >Ryga</a></li>
-          <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
+          <li onclick="return toggleCity('#fourthdot_kl'); " id="fourthdot_kl" >
               <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-4')" >Talinas</a></li>
-          <li onclick="return toggleCity('#fifthhdot_k'); "  id="fifthhdot_k">
+          <li onclick="return toggleCity('#fifthhdot_kl'); "  id="fifthhdot_kl">
               <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-5')"  >Londonas</a></li>
        </ul>
     </div>
