@@ -35,6 +35,14 @@ $(document).ready(function(){
   toggleThis(".panel-1");
 });
 
+function toggleCity(id, event){
+    console.log(id,event);
+    $(".activeCity").removeClass("activeCity");
+    $(id).addClass("activeCity");
+
+    return false;
+}
+
 
 window.onscroll = function() {scrollFunction()};
 
@@ -66,38 +74,53 @@ function topFunction() {
 <div class="container">
   <nav class="navbar">
   <a class="navbar-brand" href="/text.html">
-    <img src="img/Logo-1.jpg" width="185" height="75"  alt="">
+    <img class="navbar-brand-img" src="img/Logo-1.jpg" width="185" height="75"  alt="">
   </a>
+   <ul class="nav nav-tabs nav-desktop">
+    <li class="active"><a data-toggle="tab" href="#home" class="active show">Apie Mus</a></li>
+    <li><a class="nav-middle" data-toggle="tab" href="#menu1">Paslaugos</a></li>
+    <li><a data-toggle="tab" href="#menu2">Kontaktai/Karjera</a></li>
+  </ul>
 </nav>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Apie Mus</a></li>
-    <li><a data-toggle="tab" href="#menu1">Paslaugos</a></li>
+  <ul class="nav nav-tabs nav-mobile-device">
+    <li class="active"><a data-toggle="tab" href="#home" class="active show">Apie Mus</a></li>
+    <li><a class="nav-middle" data-toggle="tab" href="#menu1">Paslaugos</a></li>
     <li><a data-toggle="tab" href="#menu2">Kontaktai/Karjera</a></li>
   </ul>
 
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
+    <div id="home" class="tab-pane fade active show in">
       <div class="index-page">
         <a class="top" name="top"></a>
 
  <!-- <img class="responsive-image header-image" src="img/newheader.jpg">-->
 
 <!--<div class="container-fluid header" >-->
+
 <div class=" row header-row">
-  <div class="col-sm-4 intro-text header-content">
+  <div class="container-fluid col-sm-4 col">
+          <img class="img-responsive" id="aruno_pic" src="img/arunas-new.jpg" style= "height: auto; max-width: 100%; border-radius: 50%; margin-top: 20px;" class="img-fluid"><p class="img-text">„Rasti naujus,<br> nestandartinius starteginius<br> veiklos vystymo sprendimus“<br><b class=""> Arūnas Šikšta</b></p>
+      </div>
+        <div class="container-fluid col-sm-8 biography" >
+        30 metų  karjera tarptautinėje vadyboje, finansų ir telekomunkacijų srityse, steigiant ir reorganizuojant tokias įmones kaip  AB SWEDBANK, („Hansabank“ Lietuva valdybos pirmininkas, vadovavęs valstybinio Lietuvos taupomojo banko ir „Hansabank“ susijungimui), AB TEO LT (Generalinis direktorius, vadovavęs „Lietuvos telekomas“ reorganizacijai į TEO LT ), Vienos ekonomikos universiteto (Austrija) alumni, įgyjęs tarptautinį MBA laipsnį.
+        </div>
+  </div>
+  <div class="w-100"></div>
+<div class=" row header-row">
+  <div class="col-sm-6 intro-text header-content">
     <p class="intro-info">
       <b><i>Kas mes esame?</i> </b><br><br>
       Nuo 1999 m. FMG specializuojasi apskaitos, audito, verslo ir teisinių paslaugų srityje. Turime išskirtines kompetencijas apskaitos tvarkymui pagal tarptautinius apskaitos standartus (IFRS), konsolidavimui, stambių įmonių apskaitos vedimui (virš 300 darbuotojų) bei ilgalaikes kompetencijas prekybos, gamybos, paslaugų ir vitualių mokėjimo platformų apskaitos aptarnavime. Galime suteikti įmonėms registracijos adresą Lietuvoje (ES), pasirūpinti įmonės steigimu ir priežiūra.<br>FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Klaipėdoje, Rygoje, Taline ir Londone.
     </p>
   </div>
-  <div class="col-sm-4 middle-panel ">
+  <div class="col-sm-6 middle-panel ">
     <p class="intro-panel italic-style middle-info">"Mes žinome, kad esame išskirtiniai. Siekdami, kad tuo įsitikintų ir mūsų klientai, mes jiems suteikiame tokias galimybes:"</p>
       <div class="panel panel-1 dot-fixed">
         <p><b><i>Pradinė investicija į klientą</b><br></i>
         Bendradarbiavimo pradžioje be papildomo atlygio apmokome kliento personalą pirminių apskaitos dokumentų pildymo, pateikiame dokumentų šablonus, konsultuojame apskaitos politikos bei mokesčių planavimo klausimais. Kiekvienam klientui, kurio apskaitą perimame iš kitų buhalterių, atliekame pradinę apskaitos bei mokesčių peržiūrą, t.y. nustatome vedamos apskaitos įmonėje kokybę.</p>
       </div>
-      <div class="panel panel-4 dot-fixed">
+      <div class="panel panel-6 dot-fixed">
         <p><b><i>Į rezultatą nukreiptas požiūris</b></i>
         <br>Per beveik 20 veiklos metų savo paslaugas esame suteikę daugiau nei 500-ams klientų. Suvokiame jų poreikių įvairovę ir suprantame, jog kiekvienas klientas yra individualus.
 Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet nesiekiame parduoti to, kas jam nereikalinga.
@@ -110,26 +133,12 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
         </ul>
       </div>
   </div>
-  <div class="container-fluid col-sm-4 col">
-    <div class="row">
-      <div class="col-sm-5" >
-          <img class="img-responsive" id="aruno_pic" src="img/arunas-new.jpg" style= "height: auto; max-width: 100%; border-radius: 50%; margin-top: 20px;" class="img-fluid"><p class="img-text mobile-only-quote">„Rasti naujus,<br> nestandartinius starteginius<br> veiklos vystymo sprendimus“<br><b class=""> Arūnas Šikšta</b></p>
-      </div>
-      <div class="container-fluid col-sm-7 desk-only-quote" >
-         <p class="img-text">„Rasti naujus, nestandartinius starteginius veiklos vystymo sprendimus“<br><b class=""> Arūnas Šikšta</b></p>
-      </div>
-    </div>
-      <div class="w-100"></div>
-        <div class="container-fluid col-sm biography" >
-        30 metų  karjera tarptautinėje vadyboje, finansų ir telekomunkacijų srityse, steigiant ir reorganizuojant tokias įmones kaip  AB SWEDBANK, („Hansabank“ Lietuva valdybos pirmininkas, vadovavęs valstybinio Lietuvos taupomojo banko ir „Hansabank“ susijungimui), AB TEO LT (Generalinis direktorius, vadovavęs „Lietuvos telekomas“ reorganizacijai į TEO LT ), Vienos ekonomikos universiteto (Austrija) alumni, įgyjęs tarptautinį MBA laipsnį.
-        </div>
-  </div>
+</div>
 
-  </div>
+
+
+
 <!--</div>--->
-
-      </div>
-    </div>
     <div id="menu1" class="tab-pane fade">
       <div class="second-page">
         <div class="container-fluid italic-style middle-panel mobile">

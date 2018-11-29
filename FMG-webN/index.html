@@ -16,7 +16,7 @@
    <link href="css/main.css" rel="stylesheet">
     <style>
       .container-fluid{}
-     * <!--{ border: solid 1px black;}-->
+     * { border: solid 1px black;}
 -->
 
     </style>
@@ -34,6 +34,14 @@ $(document).ready(function(){
 
   toggleThis(".panel-1");
 });
+
+function toggleCity(id, event){
+    console.log(id,event);
+    $(".activeCity").removeClass("activeCity");
+    $(id).addClass("activeCity");
+
+    return false;
+}
 
 
 window.onscroll = function() {scrollFunction()};
@@ -66,18 +74,23 @@ function topFunction() {
 <div class="container">
   <nav class="navbar">
   <a class="navbar-brand" href="/text.html">
-    <img src="img/Logo-1.jpg" width="185" height="75"  alt="">
+    <img class="navbar-brand-img" src="img/Logo-1.jpg" width="185" height="75"  alt="">
   </a>
+   <ul class="nav nav-tabs nav-desktop">
+    <li class="active"><a data-toggle="tab" href="#home" class="active show">Apie Mus</a></li>
+    <li><a class="nav-middle" data-toggle="tab" href="#menu1">Paslaugos</a></li>
+    <li><a data-toggle="tab" href="#menu2">Kontaktai/Karjera</a></li>
+  </ul>
 </nav>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Apie Mus</a></li>
-    <li><a data-toggle="tab" href="#menu1">Paslaugos</a></li>
+  <ul class="nav nav-tabs nav-mobile-device">
+    <li class="active"><a data-toggle="tab" href="#home" class="active show">Apie Mus</a></li>
+    <li><a class="nav-middle" data-toggle="tab" href="#menu1">Paslaugos</a></li>
     <li><a data-toggle="tab" href="#menu2">Kontaktai/Karjera</a></li>
   </ul>
 
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
+    <div id="home" class="tab-pane fade active show in">
       <div class="index-page">
         <a class="top" name="top"></a>
 
@@ -88,7 +101,8 @@ function topFunction() {
   <div class="col-sm-4 intro-text header-content">
     <p class="intro-info">
       <b><i>Kas mes esame?</i> </b><br><br>
-      Nuo 1999 m. FMG specializuojasi apskaitos, audito, verslo ir teisinių paslaugų srityje. Turime išskirtines kompetencijas apskaitos tvarkymui pagal tarptautinius apskaitos standartus (IFRS), konsolidavimui, stambių įmonių apskaitos vedimui (virš 300 darbuotojų) bei ilgalaikes kompetencijas prekybos, gamybos, paslaugų ir vitualių mokėjimo platformų apskaitos aptarnavime. Galime suteikti įmonėms registracijos adresą Lietuvoje (ES), pasirūpinti įmonės steigimu ir priežiūra.<br>FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Klaipėdoje, Rygoje, Taline ir Londone.
+      Nuo 1999 m. FMG specializuojasi apskaitos, audito, verslo ir teisinių paslaugų srityje. Turime išskirtines kompetencijas apskaitos tvarkymui pagal tarptautinius apskaitos standartus (IFRS), konsolidavimui, stambių įmonių apskaitos vedimui (virš 300 darbuotojų) bei ilgalaikes kompetencijas prekybos, gamybos, paslaugų ir vitualių mokėjimo platformų apskaitos aptarnavime.<br>
+      Galime suteikti įmonėms registracijos adresą Lietuvoje (ES), pasirūpinti įmonės steigimu ir priežiūra.<br>FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Klaipėdoje, Rygoje, Taline ir Londone.
     </p>
   </div>
   <div class="col-sm-4 middle-panel ">
@@ -137,7 +151,7 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
 </div>
 <div class="container-fluid" >
   <div class="row header-row row-paslaugos">
-     <div class="col-sm-3 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: rgb(255, 255, 255, 0.8)">
+     <div class="col-sm-3 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: #00224B;">
        <ul class="contacts-list-ul bullet ">
         <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
            <a id="fifthhdot" onclick="return toggleThis('.panel-1')" >Buhalterinė apskaita</a></li>
@@ -228,19 +242,19 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
       <div class="third-page">
 <div class="container-fluid" >
   <div class="row header-row">
-    <div class="col-sm-2 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: rgb(255, 255, 255, 0.8)">
+    <div class="col-sm-2 contact-list side-panel" style="padding-right: 0; padding-left: 0; background-color: #00224B;">
        <ul class="contacts-list-ul bullet">
           <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
               <a id="fifthhdot" onclick="return toggleThis('.panel-1')" href="#" >Vilnius</a>
           </li>
-          <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k">
+          <li onclick="return toggleCity('#seconddot_k')"  id="seconddot_k">
               <a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#" >Klaipėda</a>
           </li>
-          <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
+          <li onclick="return toggleCity('#thirddot_k'); "  id="thirddot_k" >
               <a id="thirddot"  onclick="return toggleThis('.panel-3')" href="#" >Ryga</a></li>
           <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
               <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-4')" >Talinas</a></li>
-          <li onclick="return toggleCity('#fifthhdot_k'); " id="fifthhdot_k">
+          <li onclick="return toggleCity('#fifthhdot_k'); "  id="fifthhdot_k">
               <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-5')"  >Londonas</a></li>
        </ul>
     </div>
@@ -299,7 +313,7 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
                </div>
        </div>
     </div>
-    <div class="col-sm-4 intro-text header-content">
+    <div class="col-sm-4 intro-text header-content-whitebg">
        <p><b><i> Prisijunkite prie mūsų!</b></i><br>
               Turite išsilavinimą finansų srityje, o gal vis dar studijuojate finansus, ekonomiką ar buhalterinę apskaitą?
               Mokate ir jums patinka analizuoti?

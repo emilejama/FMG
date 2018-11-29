@@ -1,7 +1,7 @@
 footer {
     height: auto;
     background-color: rgb (255, 255, 255, 0.8);
-    color: #FFF;
+    color: #555;
     font-size: 14px;
 }
 .header-image {
@@ -13,10 +13,15 @@ footer {
     font-size: 16px;
 }
 .intro-info {
+background-color: #00224B;
+color: #FFF;
     margin-left: 15px;
 }
+div.col-sm-4.intro-text.header-content {
+background-color: #00224B;
+}
 .col-sm-4 {
-    background-color: rgb(255,255,255, 0.9)
+    background-color: rgb(255,255,255, 0.9);
 }
 .col-sm-8 {
     background-color: rgb(255,255,255, 0.9)
@@ -235,10 +240,11 @@ body, html {
     background-size: cover;
 }
 .bg {
-    background-image: url("../img/backgroundmain.jpg");
+  /*  background-image: url("../img/backgroundmain.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: #FFF;
 }
 .row-paslaugos {
     margin-left: -30px;
@@ -248,8 +254,9 @@ body, html {
     font-size: 14px;
 }
 .activeCity {
-    background-color: rgb(255,255,255, 0.7);
+    background-color: rgb(219,228,243,0.9);
 }
+
 .mobile-only-quote {
     font-size: 14px;
 }
@@ -271,7 +278,8 @@ body, html {
 
 ul.nav.nav-tabs {
 background-color: rgb(84, 141, 212);
-height: 40px;
+padding: 10px;
+
 }
 
 ul.nav.nav-tabs > li > a {
@@ -285,12 +293,36 @@ color: #333;
 background-color: rgb(255,255,255,0.8);
 padding: 15px;
 font-size: 16px;
+text-decoration: none;
+
 }
+
+a.active.show {
+background-color: rgb(255,255,255,0.8);
+text-decoration: none;
+}
+
+li.active > a.active.show {
+color: #333;
+text-decoration: none;
+}
+
+
+
 
 div.container {
 padding-left: 0;
 padding-right: 0;
+margin-left: 0;
+margin-right: 0;
+max-width: 100%;
 }
+
+
+
+
+
+
 
 
 @media only screen and (min-width: 451px) {
@@ -312,7 +344,30 @@ display:none;*/
 .mobile {
 display:none;
 }
+.nav-mobile-device {
+display:none;
 }
+ul.nav.nav-tabs {
+background-color: #FFF;
+}
+ul.nav.nav-tabs > li > a:hover {
+background-color: rgb(219,228,243,0.9);
+}
+ul.nav.nav-tabs > li > a {
+color: #000;
+}
+a.active.show {
+background-color: rgb(84, 141, 212);
+}
+li.active > a.active.show {
+color: #FFF;
+}
+}
+
+
+
+
+
 
 @media only screen and (max-width: 450px) {
 .intro-info {
@@ -337,8 +392,8 @@ display:none;
     height: 100px;
 }
 .navbar-brand-img {
-    width: 150px;
-    height: 60px;
+    width: 135px;
+    height: 50px;
 }
 .col-sm-5 {
     margin-left: 15px;
@@ -427,6 +482,7 @@ ul.nav.nav-tabs > li > a {
 color: #FFF;
 padding: 5px;
 font-size: 14px;
+
 }
 ul.nav.nav-tabs > li > a:hover {
 color: #333;
@@ -434,4 +490,8 @@ background-color: rgb(255,255,255,0.8);
 padding: 5px;
 font-size: 14px;
 }
+.nav-desktop {
+display: none;
+}
+
 }
