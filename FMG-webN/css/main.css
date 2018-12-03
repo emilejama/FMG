@@ -4,9 +4,9 @@ footer {
     color: #555;
     font-size: 14px;
 }
-div.row.header-row {
+/*div.row.header-row {
 height: 500px;
-}
+}*/
 .header-image {
     width: 100%;
     height: auto;
@@ -238,7 +238,7 @@ ul.contacts-list-ul.bullet li a:hover{
 }
 body, html {
     height: 100%;
-    font-family: Arial, Helvetica, Roboto, "Open Sans", sans-serif;
+    font-family: 'PT sans', sans-serif, 'Noto sans', sans-serif, 'Arial', sans-serif;
     font-size: 16px;
 }
 .header {
@@ -346,7 +346,9 @@ p.italic-style.desktop {
 padding-top: 50px;
 }
 
-
+.aboutus {
+color: #fff;
+}
 
 
 

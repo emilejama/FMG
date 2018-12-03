@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ <link href="css/testinis.css" rel="stylesheet">
+
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    margin-top: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <a class="navbar-brand" href="/index.html">
+    <img class="navbar-brand-img" src="img/Logo-1.jpg" width="185" height="75"  alt="">
+  </a>
+</div>
+
+<div class="topnav nav nav-tabs">
+  <a href="/test.html" class="active show" data-toggle="tab">Apie Mus</a>
+  <a href="/test-paslaugos.html"  data-toggle="tab">Paslaugos</a>
+  <a href="#kontaktai"  data-toggle="tab">Kontaktai/Karjera</a>
+</div>
+
+
+
+        <a class="top" name="top"></a>
+
+<div class="row">
+  <div class="column side">
+
+       <ul class="contacts-list-ul bullet ">
+        <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
+           <a id="fifthhdot" onclick="return toggleThis('.panel-1')" style="cursor: pointer;" >Buhalterinė apskaita</a></li>
+        <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k">
+           <a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#" >Darbo užmokestis</a></li>
+        <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
+           <a id="thirddot"  onclick="return toggleThis('.panel-3')" href="#" >Įmonių finansai</a></li>
+        <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
+           <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-4')" >Teisinės paslaugos</a></li>
+        <li onclick="return toggleCity('#fifthhdot_k'); " id="fifthhdot_k">
+           <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-5')"  >Audito paslaugos</a></li>
+       </ul>
+
+
+  </div>
+  <div class="column middle">
+    <h3><i>"Tikime, kad integruoti mūsų sprendimai padeda užtikrinti įmonių ekonominį augimą ir verslo sėkmę. Siekdami klientams sukurti maksimalią pridėtinę vertę, siūlome platų paslaugų spektrą:"</i></h3>
+  </div>
+   <div class="panel panel-1 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Buhalterinė apskaita</b></i><br>
+                  <li>Apskaitos tvarkymas pagal vietinius verslo apskaitos standartus</li>
+                  <li>Apskaitos tvarkymas pagal tarptautinius apskaitos standartus (IFRS)</li>
+                  <li>Konsolidavimas</li>
+                  <li>Valdymo apskaita</li>
+                  <li>Įmonės apskaitos politikos rengimas</li>
+                  <li>Ataskaitų teikimas mokesčius administruojančioms įstaigoms</li>
+                  <li>Klientų interesų atstovavimas Valstybinėse institucijose (pažymų užsakymas, įmokų mokėjimas, dokumentų pateikimas ir t.t.)</li>
+                  <li>Pirminių apskaitos dokumentų rengimas, sekretoriavimo paslaugos (pardavimo sąskaitų išrašymas, darbo laiko apskaitos žiniaraščių pildymas, inventorizacijų dokumentavimas, reprezentacijos aktai, akcininkų susirinkimų protokolai, mokėjimo pavedimų parengimas ir t.t.), kurjerio paslaugos</li>
+               </ul>
+           </div>
+           <div class="panel panel-2 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Darbo užmokestis</b></i><br>
+                  <li>Darbo užmokesčio skaičiavimas</li>
+                  <li>Algalapių parengimas ir pateikimas kiekvienam darbuotojui</li>
+                  <li>Darbo užmokesčio išmokėjimas darbuotojams (per FMG depozitinę ir kliento turimą sąskaitą bet kuriame banke. )</li>
+                  <li>Socialinio draudimo bei gyventojų pajamų mokesčio skaičiavimas ir ataskaitų pateikimas valstybinėms institucijoms</li>
+                  <li>Personalo dokumentacijos tvarkymas</li>
+                  <li>Kliento interesų atstovavimas SoDroje, VMI bei Registrų Centre</li>
+               </ul>
+           </div>
+           <div class="panel panel-3 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Įmonių finansai</b></i><br>
+                  <li>Išorinio / vizituojančio finansų direktoriaus paslauga</li>
+                  <li>Finansavimo pritraukimas</li>
+                  <li>Verslo vertės nustatymas, projektų vertinimas</li>
+                  <li>Konsultavimas įmonių įsigijimų ir susijungimų klausimais (M&A)</li>
+                  <li>Strateginis konsultavimas verslo plėtros klausimais</li>
+               </ul>
+           </div>
+           <div class="panel panel-4 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Bendradarbiaudami su aukštą pripažinimą turinčiomis įmonėmis teikiame teisines paslaugas</b></i><br>
+                  <li>Įmonių teisė</li>
+                  <li>Mokestinė teisė</li>
+                  <li>Civilinė teisė</li>
+                  <li>Darbo teisė</li>
+                  <li>Teisinis išsamus patikrinimas (angl. Legal due diligence)</li>
+                  <li>Klientų atstovavimas mokestiniuose ginčuose, teismuose</li>
+                  <li>Įmonių steigimas bei įkurtų įmonių pardavimas</li>
+                  <li>Įmonės registruoto buveinės adreso suteikimas</li>
+                  <li>Virtualus biuras</li>
+                  <li>PVM registracija, fiskalinio agento paslaugos</li>
+               </ul>
+           </div>
+           <div class="panel panel-5 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Bendradarbiaudami su geriausiomis Lietuvos ir užsienio audito bendrovėmis teikiame šias paslaugas:</b></i><br>
+                  <li>Finansinės atskaitomybės ir veiklos auditas (privataus ir viešojo sektoriaus)</li>
+                  <li>Apskaitos skyriaus funkcijų auditas</li>
+                  <li>Detalus mokestinis / finansinis / veiklos patikrinimas (angl. Due diligence)</li>
+                  <li>Kliento mokestinės bazės analizė ir mokesčių planavimas</li>
+                  <li>Pelno ir pajamų mokesčių grąžinimai tarptautiniame lygyje (dvigubo apmokestinimo išvengimo sutarčių pagrindu)</li>
+                  <li>Pridėtinės vertės mokesčio grąžinimai iš vietinių biudžetų bei kitų ES šalių</li>
+               </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <p>© 2018 Copyright: FMG Financial Management Group</p>
+</div>
+
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+
+
+
+
+function toggleThis(id, event){
+    console.log(id,event);
+    $(".activePanel").removeClass("activePanel");
+    $(id).addClass("activePanel");
+    return false;
+}
+
+$(document).ready(function(){
+
+  toggleThis(".panel-1");
+  var currentLocation = window.location.hash.replace("#","");
+  console.log('trololo',currentLocation);
+  if(currentLocation)
+
+  $(".active.show").removeClass("active show");
+  $("."+currentLocation).addClass("active show").click();
+  $("."+currentLocation).parent().addClass("active");
+
+});
+
+function toggleCity(id, event){
+    console.log(id,event);
+    $(".activeCity").removeClass("activeCity");
+    $(id).addClass("activeCity");
+
+    return false;
+}
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</html>

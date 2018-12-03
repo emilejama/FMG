@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<title>Financial Management Group</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+ <link href="css/testinis.css" rel="stylesheet">
+
+
+<style>
+
+
+* {
+    box-sizing: border-box;
+}
+.container-fluid{}
+     * { border: solid 1px black;}
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #00224B;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.img-text {
+float:right;
+}
+
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    margin-top: 20px;
+}
+.top {
+display:none;
+}
+#home {
+background-color: rgb(210,228,243,0.3);
+}
+
+body, html {
+font-size: 16px;
+    font-family:'PT sans', sans-serif, 'Noto sans', sans-serif,  'Arial', sans-serif;
+
+}
+
+div.topnav.nav.nav-tabs {
+padding-left: 35%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    body {
+font-size: 15px;
+    }
+    .img-text {
+float: left;
+    }
+    .topnav a {
+padding: 5px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a class="navbar-brand" href="/index.html">
+    <img class="navbar-brand-img" src="img/Logo-1.jpg" width="185" height="75"  alt="">
+  </a>
+</div>
+
+<div class="topnav nav nav-tabs">
+  <a href="#home" class="active show" data-toggle="tab">Apie Mus</a>
+  <a href="#paslaugos"  data-toggle="tab">Paslaugos</a>
+  <a href="#kontaktai"  data-toggle="tab">Kontaktai/Karjera</a>
+</div>
+
+
+
+        <a class="top" name="top"></a>
+
+
+
+<div class="row index-page tab-content" id="home">
+  <div class="column tab-pane fade active show in"  >
+    <h2> <b><i>Kas mes esame?</h2> </i></b>
+    <p>Nuo 1999 m. FMG specializuojasi apskaitos, audito, verslo ir teisinių paslaugų srityje. Turime išskirtines kompetencijas apskaitos tvarkymui pagal tarptautinius apskaitos standartus (IFRS), konsolidavimui, stambių įmonių apskaitos vedimui (virš 300 darbuotojų) bei ilgalaikes kompetencijas prekybos, gamybos, paslaugų ir vitualių mokėjimo platformų apskaitos aptarnavime.<br>
+      Galime suteikti įmonėms registracijos adresą Lietuvoje (ES), pasirūpinti įmonės steigimu ir priežiūra.<br>FMG paslaugų kokybę užtikrina 36 profesionalai dirbantys Vilniuje, Klaipėdoje, Rygoje, Taline ir Londone.</p>
+  </div>
+  <div class="column" style="background-color: rgb(84, 141, 212);
+color: #FFF;">
+    <h3><i>"Mes žinome, kad esame išskirtiniai. Siekdami, kad tuo įsitikintų ir mūsų klientai, mes jiems suteikiame tokias galimybes:"</i></h3>
+     <div class="panel panel-1 dot-fixed">
+        <p><b><i>Pradinė investicija į klientą</b><br></i>
+        Bendradarbiavimo pradžioje be papildomo atlygio apmokome kliento personalą pirminių apskaitos dokumentų pildymo, pateikiame dokumentų šablonus, konsultuojame apskaitos politikos bei mokesčių planavimo klausimais. Kiekvienam klientui, kurio apskaitą perimame iš kitų buhalterių, atliekame pradinę apskaitos bei mokesčių peržiūrą, t.y. nustatome vedamos apskaitos įmonėje kokybę.</p>
+      </div>
+   <!--   <div class="panel panel-4 dot-fixed">
+        <p><b><i>Į rezultatą nukreiptas požiūris</b></i>
+        <br>Per beveik 20 veiklos metų savo paslaugas esame suteikę daugiau nei 500-ams klientų. Suvokiame jų poreikių įvairovę ir suprantame, jog kiekvienas klientas yra individualus.
+Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet nesiekiame parduoti to, kas jam nereikalinga.
+        </p>
+      </div> -->
+       <div class="dotstyle dotstyle-fillup">
+        <ul>
+          <li><a href="#" onclick="return toggleThis('.panel-1')" id="firstdot"></a></li>
+          <li><a href="#" onclick="return toggleThis('.panel-4'); " id="fourthdot"></a></li>
+        </ul>
+      </div>
+  </div>
+  <div class="column">
+
+     <img class="img-responsive" id="aruno_pic" src="img/arunas-new.jpg" style= "height: auto; max-width: 100%; border-radius: 50%; margin-top: 20px;" class="img-fluid"><p class="img-text"><i>„Rasti naujus,<br> nestandartinius starteginius<br> veiklos vystymo sprendimus“</i><br><b> Arūnas Šikšta</b></p>
+
+      <div class="container-fluid col-sm biography" >
+        30 metų  karjera tarptautinėje vadyboje, finansų ir telekomunkacijų srityse, steigiant ir reorganizuojant tokias įmones kaip  AB SWEDBANK, („Hansabank“ Lietuva valdybos pirmininkas, vadovavęs valstybinio Lietuvos taupomojo banko ir „Hansabank“ susijungimui), AB TEO LT (Generalinis direktorius, vadovavęs „Lietuvos telekomas“ reorganizacijai į TEO LT ), Vienos ekonomikos universiteto (Austrija) alumni, įgyjęs tarptautinį MBA laipsnį.
+        </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+  <p>© 2018 Copyright: FMG Financial Management Group</p>
+</div>
+
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+
+
+
+
+function toggleThis(id, event){
+    console.log(id,event);
+    $(".activePanel").removeClass("activePanel");
+    $(id).addClass("activePanel");
+    return false;
+}
+
+$(document).ready(function(){
+
+  toggleThis(".panel-1");
+  var currentLocation = window.location.hash.replace("#","");
+  console.log('trololo',currentLocation);
+  if(currentLocation)
+
+  $(".active.show").removeClass("active show");
+  $("."+currentLocation).addClass("active show").click();
+  $("."+currentLocation).parent().addClass("active");
+
+});
+
+function toggleCity(id, event){
+    console.log(id,event);
+    $(".activeCity").removeClass("activeCity");
+    $(id).addClass("activeCity");
+
+    return false;
+}
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</html>
