@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<title>Financial Management Group</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <!--fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+ <link href="css/testinis.css" rel="stylesheet">
+
+
+<style>
+
+
+* {
+    box-sizing: border-box;
+}
+  .container-fluid{}
+     * <!-- { border: solid 1px black;}-->
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.logo {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+.navbar-brand-img {
+width: 185px;
+height: 75px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: /*#00224B;*/ #FFF;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #00224B;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(84, 141, 212);
+    color: #FFF;
+}
+
+.bordersLight {
+border:10px solid rgb(210,228,243);
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.img-text {
+float:right;
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #00224B;
+    font-size: 14px;
+    color: #FFF;
+    margin-top: 20px;
+}
+.top {
+display:none;
+}
+#home {
+background-color: rgb(210,228,243,0.3);
+}
+.col-sm-3{
+background-color: rgb(84, 141, 212);
+}
+.contacts-list-ul{
+    margin-top: 90px;
+    font-size: 14px;
+    color: #FFF;
+    width: 100%;
+    background-color: rgb(84, 141, 212);
+    line-height: 2.5;
+    height: 180px;
+}
+ul.contacts-list-ul.bullet {
+padding-left: 0;
+text-align: center;
+}
+ul.contacts-list-ul.bullet li a {
+    margin-top: 120px;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: uppercase;
+
+}
+ul.contacts-list-ul.bullet li a:hover{
+    margin-top: 120px;
+    font-size: 14px;
+    color: #FFF;
+
+}
+.bullet {
+    list-style: none;
+}
+.bullet-colour {
+    list-style: none; /* Remove default bullets */
+}
+.bullet-colour li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: rgb(84, 141, 212); /* Change the color */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+      font-weight: bold; /* If you want it to be bold */
+}
+
+
+body, html {
+font-size: 16px;
+    font-family:'PT sans', sans-serif, 'Noto sans', sans-serif,  'Arial', sans-serif;
+
+}
+
+div.topnav.nav.nav-tabs {
+float: right;
+margin-top: 8px;
+border-bottom: 2px solid rgb(210,228,243);
+}
+#kalbaNav {
+margin-left: 10px;
+border: 2px solid rgb(210,228,243);
+border-bottom: none;
+}
+div.topnav.nav.nav-tabs > a {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:800px) {
+    .column {
+        width: 100%;
+    }
+    body {
+font-size: 15px;
+    }
+    .img-text {
+float: left;
+    }
+    .topnav a {
+padding: 5px;
+}
+.logo {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+.navbar-brand-img {
+width: 135px;
+height: 60px;
+}
+
+}
+</style>
+</head>
+<body>
+ <a class="top" name="top"></a>
+
+<div class="wrapper">
+<div class="logo">
+  <a class="navbar-brand" href="/index.html">
+    <img class="navbar-brand-img" src="img/Logo-1.jpg" alt="">
+  </a>
+
+<div class="topnav nav nav-tabs">
+  <a href="index-3copy.html"  data-toggle-="tab">Apie Mus</a>
+  <a href="paslaugos-3copy.html" class="active show" data-toggle-="tab">Paslaugos</a>
+  <a href="#kontaktai"  data-toggle-="tab">Kontaktai</a>
+  <a href="#karjera"  data-toggle-="tab">Karjera</a>
+  <a href="#kalba" id="kalbaNav" data-toggle-="tab">LT</a>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="wrapper-1">
+  <div class="row">
+  <div class="column col-sm-3 tab-pane fade active show in t" >
+     <ul class="contacts-list-ul bullet ">
+        <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
+           <a id="fifthhdot" onclick="return toggleThis('.panel-1')" style="cursor: pointer;" >Buhalterinė apskaita</a></li>
+        <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k">
+           <a id="seconddot"  onclick="return toggleThis('.panel-2')" href="#" >Darbo užmokestis</a></li>
+        <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
+           <a id="thirddot"  onclick="return toggleThis('.panel-3')" href="#" >Įmonių finansai</a></li>
+        <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
+           <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-4')" >Teisinės paslaugos</a></li>
+        <li onclick="return toggleCity('#fifthhdot_k'); " id="fifthhdot_k">
+           <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-5')"  >Audito paslaugos</a></li>
+       </ul>
+  </div>
+  <div class="column col-sm-9 bordersLight" >
+
+       <p class="italic-style desktop">
+         "Tikime, kad integruoti mūsų sprendimai padeda užtikrinti įmonių ekonominį augimą ir verslo sėkmę. Siekdami klientams sukurti maksimalią pridėtinę vertę, siūlome platų paslaugų spektrą:"
+       </p>
+           <div class="panel panel-1 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Buhalterinė apskaita</b></i><br>
+                  <li>Apskaitos tvarkymas pagal vietinius verslo apskaitos standartus</li>
+                  <li>Apskaitos tvarkymas pagal tarptautinius apskaitos standartus (IFRS)</li>
+                  <li>Konsolidavimas</li>
+                  <li>Valdymo apskaita</li>
+                  <li>Įmonės apskaitos politikos rengimas</li>
+                  <li>Ataskaitų teikimas mokesčius administruojančioms įstaigoms</li>
+                  <li>Klientų interesų atstovavimas Valstybinėse institucijose (pažymų užsakymas, įmokų mokėjimas, dokumentų pateikimas ir t.t.)</li>
+                  <li>Pirminių apskaitos dokumentų rengimas, sekretoriavimo paslaugos (pardavimo sąskaitų išrašymas, darbo laiko apskaitos žiniaraščių pildymas, inventorizacijų dokumentavimas, reprezentacijos aktai, akcininkų susirinkimų protokolai, mokėjimo pavedimų parengimas ir t.t.), kurjerio paslaugos</li>
+               </ul>
+           </div>
+      </div>
+
+
+
+</div>
+</div>
+
+
+
+<div class="footer">
+  <p>© 2018 Copyright: FMG Financial Management Group</p>
+</div>
+
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/fmg.js">
+
+
+
+
+
+</script>
+
+</html>
