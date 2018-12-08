@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Financial Management Group</title>
+    <meta name="description" content="Financial service by FMGroup">
+
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="all">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+  * {
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+    <header class="site-branding">
+        <div class="centered">
+                <a class="navbar-brand" href="/index.html">
+                <img class="navbar-brand-img" src="img/Logo-1.jpg" width="135" height="55">
+                </a>
+        </div><!-- .centered -->
+    </header><!-- .masthead -->
+
+    <div class="menu">
+                  <nav id="single-nav" class="single-nav menu" role="navigation">
+                        <ul>
+                            <li><a href="FMGroup.html">Apie Mus</a></li>
+                            <li><a href="FMGroup-Paslaugos.html">Paslaugos</a></li>
+                            <li><a href="#">Kontaktai</a></li>
+                            <li><a href="FMGroup-karjera.html">Karjera</a></li>
+                        </ul>
+                    </nav><!-- #single-nav .single-nav -->
+    </div> <!-- menu-->
+
+ <a class="top" name="top"></a>
+
+ <div class="column service-list">
+              <ul class="contacts-list-ul bullet ">
+        <li onclick="return toggleCity('#firstdot_k')" class="activeCity" id="firstdot_k" >
+           <a id="fifthhdot" onclick="return toggleThis('.panel-3')" style="cursor: pointer;" >Buhalterinė apskaita</a></li>
+        <li onclick="return toggleCity('#seconddot_k')" id="seconddot_k">
+           <a id="seconddot"  onclick="return toggleThis('.panel-4')" href="#" >Darbo užmokestis</a></li>
+        <li onclick="return toggleCity('#thirddot_k'); " id="thirddot_k" >
+           <a id="thirddot"  onclick="return toggleThis('.panel-5')" href="#" >Įmonių finansai</a></li>
+        <li onclick="return toggleCity('#fourthdot_k'); " id="fourthdot_k" >
+           <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-6')" >Teisinės paslaugos</a></li>
+        <li onclick="return toggleCity('#fifthhdot_k'); " id="fifthhdot_k">
+           <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-7')"  >Audito paslaugos</a></li>
+       </ul>
+  </div>
+   <div class="column panel-3 service">
+     <h4>
+         "Tikime, kad integruoti mūsų sprendimai padeda užtikrinti įmonių ekonominį augimą ir verslo sėkmę. Siekdami klientams sukurti maksimalią pridėtinę vertę, siūlome platų paslaugų spektrą:"
+    </h4>
+    <ul class="bullet-colour"><b><i>Buhalterinė apskaita</b></i><br>
+                  <li>Apskaitos tvarkymas pagal vietinius verslo apskaitos standartus</li>
+                  <li>Apskaitos tvarkymas pagal tarptautinius apskaitos standartus (IFRS)</li>
+                  <li>Konsolidavimas</li>
+                  <li>Valdymo apskaita</li>
+                  <li>Įmonės apskaitos politikos rengimas</li>
+                  <li>Ataskaitų teikimas mokesčius administruojančioms įstaigoms</li>
+                  <li>Klientų interesų atstovavimas Valstybinėse institucijose (pažymų užsakymas, įmokų mokėjimas, dokumentų pateikimas ir t.t.)</li>
+                  <li>Pirminių apskaitos dokumentų rengimas, sekretoriavimo paslaugos (pardavimo sąskaitų išrašymas, darbo laiko apskaitos žiniaraščių pildymas, inventorizacijų dokumentavimas, reprezentacijos aktai, akcininkų susirinkimų protokolai, mokėjimo pavedimų parengimas ir t.t.), kurjerio paslaugos</li>
+               </ul>
+  </div>
+<!--
+ <div class="panel panel-4 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Darbo užmokestis</b></i><br>
+                  <li>Darbo užmokesčio skaičiavimas</li>
+                  <li>Algalapių parengimas ir pateikimas kiekvienam darbuotojui</li>
+                  <li>Darbo užmokesčio išmokėjimas darbuotojams (per FMG depozitinę ir kliento turimą sąskaitą bet kuriame banke. )</li>
+                  <li>Socialinio draudimo bei gyventojų pajamų mokesčio skaičiavimas ir ataskaitų pateikimas valstybinėms institucijoms</li>
+                  <li>Personalo dokumentacijos tvarkymas</li>
+                  <li>Kliento interesų atstovavimas SoDroje, VMI bei Registrų Centre</li>
+               </ul>
+           </div>
+           <div class="panel panel-5 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Įmonių finansai</b></i><br>
+                  <li>Išorinio / vizituojančio finansų direktoriaus paslauga</li>
+                  <li>Finansavimo pritraukimas</li>
+                  <li>Verslo vertės nustatymas, projektų vertinimas</li>
+                  <li>Konsultavimas įmonių įsigijimų ir susijungimų klausimais (M&A)</li>
+                  <li>Strateginis konsultavimas verslo plėtros klausimais</li>
+               </ul>
+           </div>
+           <div class="panel panel-6 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Bendradarbiaudami su aukštą pripažinimą turinčiomis įmonėmis teikiame teisines paslaugas</b></i><br>
+                  <li>Įmonių teisė</li>
+                  <li>Mokestinė teisė</li>
+                  <li>Civilinė teisė</li>
+                  <li>Darbo teisė</li>
+                  <li>Teisinis išsamus patikrinimas (angl. Legal due diligence)</li>
+                  <li>Klientų atstovavimas mokestiniuose ginčuose, teismuose</li>
+                  <li>Įmonių steigimas bei įkurtų įmonių pardavimas</li>
+                  <li>Įmonės registruoto buveinės adreso suteikimas</li>
+                  <li>Virtualus biuras</li>
+                  <li>PVM registracija, fiskalinio agento paslaugos</li>
+               </ul>
+           </div>
+           <div class="panel panel-7 dot-fixed-services">
+               <ul class="bullet-colour"><b><i>Bendradarbiaudami su geriausiomis Lietuvos ir užsienio audito bendrovėmis teikiame šias paslaugas:</b></i><br>
+                  <li>Finansinės atskaitomybės ir veiklos auditas (privataus ir viešojo sektoriaus)</li>
+                  <li>Apskaitos skyriaus funkcijų auditas</li>
+                  <li>Detalus mokestinis / finansinis / veiklos patikrinimas (angl. Due diligence)</li>
+                  <li>Kliento mokestinės bazės analizė ir mokesčių planavimas</li>
+                  <li>Pelno ir pajamų mokesčių grąžinimai tarptautiniame lygyje (dvigubo apmokestinimo išvengimo sutarčių pagrindu)</li>
+                  <li>Pridėtinės vertės mokesčio grąžinimai iš vietinių biudžetų bei kitų ES šalių</li>
+               </ul>
+            </div>
+
+             </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+-->
+
+
+
+<div class="footer">
+  <p>© 2018 Copyright: FMG Financial Management Group</p>
+</div>
+
+<div class="container-fluid my-btn">
+  <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">Į viršų</button>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+    </body>
