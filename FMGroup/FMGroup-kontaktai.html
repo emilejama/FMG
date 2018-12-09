@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Financial Management Group</title>
+    <meta name="description" content="Financial service by FMGroup">
+
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="all">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+
+</style>
+</head>
+<body>
+
+    <header class="site-branding">
+        <div class="centered">
+                <a class="navbar-brand" href="/index.html">
+                <img class="navbar-brand-img" src="img/Logo-1.jpg" width="135" height="55">
+                </a>
+        </div><!-- .centered -->
+    </header><!-- .masthead -->
+
+    <div class="menu">
+                  <nav id="single-nav" class="single-nav menu" role="navigation">
+                        <ul>
+                            <li><a href="FMGroup.html">Apie Mus</a></li>
+                            <li><a href="FMGroup-Paslaugos.html">Paslaugos</a></li>
+                            <li><a href="FMGroup-kontaktai.html">Kontaktai</a></li>
+                            <li><a href="FMGroup-karjera.html">Karjera</a></li>
+                        </ul>
+                    </nav><!-- #single-nav .single-nav -->
+    </div> <!-- menu-->
+
+ <a class="top" name="top"></a>
+<div class="empty-div">
+
+</div>
+<div class="wrap-service">
+ <div class="column service-list">
+              <ul>
+          <li onclick="return toggleCity('#firstdot_kl')" class="activeCity" id="firstdot_kl" >
+              <a id="fifthhdot" onclick="return toggleThis('.panel-8')" href="#" >Vilnius</a>
+          </li>
+          <li onclick="return toggleCity('#seconddot_kl')"  id="seconddot_kl">
+              <a id="seconddot"  onclick="return toggleThis('.panel-9')" href="#" >Klaipėda</a>
+          </li>
+          <li onclick="return toggleCity('#thirddot_kl'); "  id="thirddot_kl" >
+              <a id="thirddot"  onclick="return toggleThis('.panel-10')" href="#" >Ryga</a></li>
+          <li onclick="return toggleCity('#fourthdot_kl'); " id="fourthdot_kl" >
+              <a id="fourthdot" href="#"  onclick="return toggleThis('.panel-11')" >Talinas</a></li>
+          <li onclick="return toggleCity('#fifthhdot_kl'); "  id="fifthhdot_kl">
+              <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-12')"  >Londonas</a></li>
+       </ul>
+  </div>
+   <div class="column panel-8 service">
+
+             <div class="text-block" id="vilnius" >
+                    <b>VILNIUS<br></b>
+                    <i class="contact-brand-color">UAB FINANCIAL MANAGEMENT GROUP<br></i>
+                        Žalgirio g. 90, Verslo centras City, LT - 09303, Vilnius, Lietuva<br>
+                        Tel. + 370 5 2619477<br>
+                        Faks. +370 5 2503513<br>
+                        E. paštas: info@fmg.lt<br>
+              </div>
+
+  </div>
+<!--
+  <div class="column panel-9 service">
+           <div class="text-block">
+                 <br><b><i>KLAIPĖDA</i></b><br>
+                 <i class="contact-brand-color">UAB FINANCIAL MANAGEMENT GROUP<br></i>
+                      Šilutės pl. 2-417, LT - 91111, Klaipėda, Lietuva<br>
+                      Tel. +370 46 257023<br>
+                      Faks. +370 5 2503513<br>
+                      El. paštas: info@fmg.lt<br>
+               </div>
+  </div>
+<div class="column panel-10 service">
+            <div class="text-block" >
+                  <br><b><i>RYGA</b></i><br>
+                  <i class="contact-brand-color">SIA FMG LATVIA<br></i>
+                        Kr. Barona iela 32, LV-1011, Ryga, Latvija<br>
+                        Tel. +371 661 00399<br>
+                        Faks. +371 66100388<br>
+                        El. paštas: info@fmggroup.eu<br>
+               </div>
+  </div>
+  <div class="column panel-11 service">
+           <div class="text-block">
+                 <br> <b><i>TALINAS</i></b><br>
+                 <i class="contact-brand-color"> OÜ FINANCIAL MANAGEMENT GROUP<br></i>
+                        Viru väljak 2, 10111, Talinas, Estija<br>
+                        Tel. +372 631 1923<br>
+                        Faks. +372 6311924<br>
+                        El. paštas: info@fmg-tallinn.ee<br>
+               </div>
+  </div>
+  <div class="column panel-12 service">
+             <div class="text-block">
+                   <br> <b><i>LONDON</i></b><br>
+                   <i class="contact-brand-color">FMG LONDON LTD<br></i>
+                          London<br>
+                          W1S 3SX<br>
+               </div>
+  </div>
+
+-->
+
+</div> <!--wrap -->
+
+<div class="footer">
+  <p>© 2018 Copyright: FMG Financial Management Group</p>
+</div>
+
+<div class="container-fluid my-btn">
+  <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">Į viršų</button>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+    </body>
