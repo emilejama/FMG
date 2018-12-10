@@ -18,7 +18,7 @@
 
     <header class="site-branding">
         <div class="centered">
-                <a class="navbar-brand" href="/index.html">
+                <a class="navbar-brand" href="FMGroup.html">
                 <img class="navbar-brand-img" src="img/Logo-1.jpg" width="135" height="55">
                 </a>
         </div><!-- .centered -->
@@ -48,7 +48,7 @@
 
 <div class="column column-panels">
     <h4><i>"Mes žinome, kad esame išskirtiniai. Siekdami, kad tuo įsitikintų ir mūsų klientai, mes jiems suteikiame tokias galimybes:"</i></h4>
-<div class="wrap">
+<div class="wrap balta">
      <div class="panel panel-1">
         <p><b><i>Pradinė investicija į klientą</b></i> <br>
         Bendradarbiavimo pradžioje be papildomo atlygio apmokome kliento personalą pirminių apskaitos dokumentų pildymo, pateikiame dokumentų šablonus, konsultuojame apskaitos politikos bei mokesčių planavimo klausimais. Kiekvienam klientui, kurio apskaitą perimame iš kitų buhalterių, atliekame pradinę apskaitos bei mokesčių peržiūrą, t.y. nustatome vedamos apskaitos įmonėje kokybę.</p>
@@ -63,7 +63,7 @@ Kiekvienam klientui sukuriame tik jam aktualų paslaugų komplektą ir niekuomet
           <div class="dotstyle dotstyle-fillup">
             <ul>
               <li><a href="#" onclick="return toggleThis('.panel-1')" id="firstdot"></a></li>
-              <li><a href="#" onclick="return toggleThis('.panel-4'); " id="fourthdot"></a></li>
+              <li><a href="#" onclick="return toggleThis('.panel-2'); " id="seconddot"></a></li>
             </ul>
           </div> <!-- panel-->
 </div> <!-- column-->
@@ -147,8 +147,8 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function toggleThis(id, event){
-    console.log(id,event);
+function toggleThis(id){
+    console.log(id);
     $(".activePanel").removeClass("activePanel");
     $(id).addClass("activePanel");
     return false;

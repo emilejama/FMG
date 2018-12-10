@@ -18,7 +18,7 @@
 
     <header class="site-branding">
         <div class="centered">
-                <a class="navbar-brand" href="/index.html">
+                <a class="navbar-brand" href="FMGroup.html">
                 <img class="navbar-brand-img" src="img/Logo-1.jpg" width="135" height="55">
                 </a>
         </div><!-- .centered -->
@@ -28,7 +28,7 @@
                   <nav id="single-nav" class="single-nav menu" role="navigation">
                         <ul>
                             <li><a href="FMGroup.html">Apie Mus</a></li>
-                            <li><a href="FMGroup-Paslaugos.html">Paslaugos</a></li>
+                            <li  class="active"><a href="FMGroup-Paslaugos.html">Paslaugos</a></li>
                             <li><a href="FMGroup-kontaktai.html">Kontaktai</a></li>
                             <li><a href="FMGroup-karjera.html">Karjera</a></li>
                         </ul>
@@ -55,7 +55,7 @@
            <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-7')"  >Audito paslaugos</a></li>
        </ul>
   </div>
-   <div class="column panel-3 service">
+   <div class="panel column panel-3 service activePanel background-color-white">
      <!--<h4 class="desk-list">
          "Tikime, kad integruoti mūsų sprendimai padeda užtikrinti įmonių ekonominį augimą ir verslo sėkmę. Siekdami klientams sukurti maksimalią pridėtinę vertę, siūlome platų paslaugų spektrą:"
     </h4> -->
@@ -70,8 +70,8 @@
                   <li>Pirminių apskaitos dokumentų rengimas, sekretoriavimo paslaugos (pardavimo sąskaitų išrašymas, darbo laiko apskaitos žiniaraščių pildymas, inventorizacijų dokumentavimas, reprezentacijos aktai, akcininkų susirinkimų protokolai, mokėjimo pavedimų parengimas ir t.t.), kurjerio paslaugos</li>
                </ul>
   </div>
-<!--
- <div class="panel panel-4 dot-fixed-services">
+
+ <div class="panel panel-4 dot-fixed-services service">
                <ul class="bullet-colour"><b><i>Darbo užmokestis</b></i><br>
                   <li>Darbo užmokesčio skaičiavimas</li>
                   <li>Algalapių parengimas ir pateikimas kiekvienam darbuotojui</li>
@@ -81,7 +81,7 @@
                   <li>Kliento interesų atstovavimas SoDroje, VMI bei Registrų Centre</li>
                </ul>
            </div>
-           <div class="panel panel-5 dot-fixed-services">
+           <div class="panel panel-5 dot-fixed-services service">
                <ul class="bullet-colour"><b><i>Įmonių finansai</b></i><br>
                   <li>Išorinio / vizituojančio finansų direktoriaus paslauga</li>
                   <li>Finansavimo pritraukimas</li>
@@ -90,7 +90,7 @@
                   <li>Strateginis konsultavimas verslo plėtros klausimais</li>
                </ul>
            </div>
-           <div class="panel panel-6 dot-fixed-services">
+           <div class="panel panel-6 dot-fixed-services service">
                <ul class="bullet-colour"><b><i>Bendradarbiaudami su aukštą pripažinimą turinčiomis įmonėmis teikiame teisines paslaugas</b></i><br>
                   <li>Įmonių teisė</li>
                   <li>Mokestinė teisė</li>
@@ -104,7 +104,7 @@
                   <li>PVM registracija, fiskalinio agento paslaugos</li>
                </ul>
            </div>
-           <div class="panel panel-7 dot-fixed-services">
+           <div class="panel panel-7 dot-fixed-services service">
                <ul class="bullet-colour"><b><i>Bendradarbiaudami su geriausiomis Lietuvos ir užsienio audito bendrovėmis teikiame šias paslaugas:</b></i><br>
                   <li>Finansinės atskaitomybės ir veiklos auditas (privataus ir viešojo sektoriaus)</li>
                   <li>Apskaitos skyriaus funkcijų auditas</li>
@@ -121,7 +121,7 @@
       </div>
     </div>
 
--->
+
 
 </div> <!--wrap -->
 
@@ -151,6 +151,34 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+$(document).ready(function(){
+
+  //toggleThis(".panel-1");
+  var currentLocation = window.location.hash.replace("#","");
+  console.log('trololo',currentLocation);
+  if(currentLocation)
+
+  $(".active.show").removeClass("active show");
+  $("."+currentLocation).addClass("active show").click();
+  $("."+currentLocation).parent().addClass("active");
+
+});
+
+function toggleCity(id, event){
+    console.log(id,event);
+    $(".activeCity").removeClass("activeCity");
+    $(id).addClass("activeCity");
+
+    return false;
+}
+
+function toggleThis(id){
+    console.log(id);
+    $(".activePanel").removeClass("activePanel");
+    $(id).addClass("activePanel");
+    return false;
 }
 </script>
 
