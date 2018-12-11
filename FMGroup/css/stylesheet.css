@@ -1,7 +1,7 @@
 
-  * {
+ /* * {
 border: 1px solid black;
-}
+} */
 body, html {
     font-size: 14px;
     font-family:'PT sans', sans-serif, 'Noto sans', sans-serif,  'Arial', sans-serif;
@@ -75,7 +75,7 @@ h4{
     display: none;
     flex-wrap:wrap;
     padding: 10px;
-    background-color: rgb(84, 141, 212);
+
 
 }
 .balta{
@@ -94,22 +94,8 @@ color: #FFF;
 .dotstyle {
     background-color: rgb(84, 141, 212);
 }
-.karjera-img {
-    padding: 100px;
-flex: 1;
-/* width: 100%;
-  height: auto;
-display: flex;
-flex-wrap: wrap;
 
-background-size: contain;*/
-}
-.karjera-text {
-    padding: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -201,8 +187,13 @@ li.active {
     list-style: none;
     padding:0;
     font-size: 12px;
+    text-transform: uppercase;
     text-align: center;
     line-height: 2;
+}
+.service-list ul li.activeCity a {
+color: #FFF;
+
 }
 .bullet-colour {
     list-style: none;
@@ -221,6 +212,7 @@ li.active {
     justify-content: center;
     line-height: 2;
     flex: 1 0 auto;
+    text-decoration: none;
 }
 .empty-div {
     background-color: rgb(210,228,243);
@@ -252,19 +244,76 @@ border: 10px solid rgb(210,228,243)
 }
 
 .wrap-contacts {
-background: url("../img/vilnius-img.jpg");
+/*background: url("../img/carrier.jpg");*/
+
+}
+.karjera-text {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.karjera-img {
+flex: 1;
+  /* background: url("../img/karjera2.jpg");
+background-size: contain;
+background-repeat: no-repeat;*/
+overflow: hidden;
+}
+.responsive {
+height: auto;
+width: 100%;
+
+margin-top: 30px;
 }
 
 
+.panel-8 {
+background: url("../img/vilnius-img.jpg");
+}
+.panel-9 {
+background: url("../img/klaipeda-light.jpg");
+}
+.panel-10 {
+background: url("../img/riga-light.jpg");
+}
+.panel-11 {
+background: url("../img/tallinas-light.jpg");
+}
+.panel-12 {
+background: url("../img/london.jpg");
+}
 .miestai, .contacts {
 display:none;
 }
 .activeCity {
-background-color: red;
+background-color: rgb(84, 141, 212);
 }
+
 .activePanel {
 display:flex;
 }
+.text-block {
+background-color: rgb(255,255,255,0.7);
+margin-top: 100px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.contacts-list ul li.activeCity a {
+color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ////////////////////////////////////////////////// */
 
@@ -283,7 +332,26 @@ display:flex;
 
     }
 }
+@media screen and (min-width:1000px) {
+/*.karjera-img {
+flex: 1;
+background: url("../img/carrier.jpg");
+background-size: contain;
+background-repeat: no-repeat;
 
+
+}*/
+.wrap.wrap-karjera{
+padding: 50px;
+}
+ .bottom-img {
+height: 300px;
+width: 100%;
+background: url("../img/test.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+}
 
 @media screen and (min-width:950px) {
     body {
@@ -317,8 +385,9 @@ display:flex;
         display: none;
     }
 
-}
 
+
+}
 .activePanel.panel {
         display: flex;
     }
@@ -330,14 +399,14 @@ display:flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
-        background-color: #FFF;
+        background-color: #fff;
         }
     .wrap-service {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
-        background-color: rgb(210,228,243);
+        background-color: #FFF;
     }
     .service-list, .contacts-list {
         display: flex;
@@ -345,7 +414,7 @@ display:flex;
         flex: 1;
         justify-content:  flex-start;
         flex-direction: column;
-        background-color: rgb(210,228,243);
+        background-color: #fff;
     }
     .contacts {
         display: flex;
@@ -394,6 +463,12 @@ display:flex;
     }
     .wrap-service {
 height: 500px;
+}
+.panel {
+height: 350px;
+}
+.miestai {
+height: 350px;
 }
 .wrap-contacts {
 height: 500px;
@@ -467,7 +542,7 @@ padding-bottom: 20px;
         font-size: 14px;
         line-height: 1.5;
     }
-}
+
 @media screen and (min-width:501px) and (max-width:650px) {
     body {
         font-size: 15px;
@@ -493,6 +568,16 @@ padding-bottom: 20px;
     .activeCity {
         display: flex;
     }
+     /*   .karjera-text {
+        display:flex;
+        flex:1;
+    order: 1;
+}
+.karjera-img {
+display:flex;
+flex:1
+order:2;
+}*/
 }
 
 .dotstyle ul {
