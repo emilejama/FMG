@@ -636,9 +636,10 @@ background-repeat: no-repeat;
     .column-quote, .biography {
             display: inline-block;
         flex-wrap: wrap;
-        flex: 1;
+
         justify-content:  flex-start;
         flex-direction: column;
+        width:100%;
       }
 
     .dotstyle {
