@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="lt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Financial Management Group</title>
     <meta name="description" content="Financial service by FMGroup">
-
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="all">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
     <link rel="icon" href="favicon.ico" />
-
 <!-- favicon all devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -23,15 +18,13 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-
-<header class="site-branding">
+  <header class="site-branding">
     <div class="centered">
-        <a class="navbar-brand" href="FMGroup.html">
-        <img class="navbar-brand-img" src="img/Logo-1.jpg" width="135" height="55">
+        <a class="navbar-brand" href="index.html">
+        <img class="navbar-brand-img" src="img/Logo-1.jpg" href="index.html" width="135" height="55">
         </a>
     </div><!-- .centered -->
-</header><!-- .masthead -->
-
+  </header><!-- .masthead -->
 <div class="menu">
     <nav id="single-nav" class="single-nav menu" role="navigation">
           <ul>
@@ -83,102 +76,30 @@
                         </ul>
                   </div>
 </div> <!-- column-->
-
 <div class="border-wrap">
       <div class= "column column-quote">
             <div class="column img-responsive">
                   <img  id="aruno_pic" src="img/arunas-new.jpg" alt="Įmonės vadovas Arūnas Šikšta" style= "height: auto; max-width: 100%; border-radius: 50%; margin-top: 20px;" class="img-fluid">
             </div>
                       <p class="img-text"><i>„Rasti naujus,<br>starteginius veiklos<br> vystymo ir finansų valdymo sprendimus“</i><br><b> Arūnas Šikšta</b></p>
-
      </div>
             <div class=" column biography" >
                   30 metų  karjera tarptautinėje vadyboje, finansų ir telekomunkacijų srityse, steigiant ir reorganizuojant AB SWEDBANK, („Hansabank“ Lietuva valdybos pirmininkas, vadovavęs valstybinio Lietuvos taupomojo banko ir „Hansabank“ susijungimui), AB TEO LT (Generalinis direktorius, vadovavęs „Lietuvos telekomas“ reorganizacijai į TEO LT ), ADB "Gjensidige" Tarybos pirmininko pavaduotojas, Vienos ekonomikos universiteto (Austrija) alumni, įgyjęs tarptautinį MBA laipsnį.
             </div> <!-- biography-->
 </div> <!-- borderswrap-->
 </div> <!-- allwrap-->
-
 <div class="bottom-img">
 </div>
-
 <div class="footer">
   <p>© 2018 Copyright: FMG Financial Management Group</p>
 </div>
-
 <div class="container-fluid my-btn">
   <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">Į viršų</button>
 </div>
-
+<!--script -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="fmgjs/fmgindex.js"></script>
 
-<script>
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-function toggleThis(id){
-    console.log(id);
-    $(".activePanel").removeClass("activePanel");
-    $(id).addClass("activePanel");
-    return false;
-}
-
-$(document).ready(function(){
-
-  toggleThis(".panel-1");
-  var currentLocation = window.location.hash.replace("#","");
-  console.log('trololo',currentLocation);
-  if(currentLocation)
-
-  $(".active.show").removeClass("active show");
-  $("."+currentLocation).addClass("active show").click();
-  $("."+currentLocation).parent().addClass("active");
-
-});
-
-function toggleCity(id, event){
-    console.log(id,event);
-    $(".activeCity").removeClass("activeCity");
-    $(id).addClass("activeCity");
-
-    return false;
-}
-
-
-
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-    </body>
+</body>
+</html>

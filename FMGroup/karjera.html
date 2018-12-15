@@ -1,72 +1,54 @@
 <!DOCTYPE html>
 <html lang="lt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>FMG karjera</title>
     <meta name="description" content="Financial service by FMGroup">
-
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="all">
- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-<link rel="icon" href="favicon.ico" />
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-
-<style>
-
-</style>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico" />
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-
-    <header class="site-branding">
-        <div class="centered">
-                <a class="navbar-brand" href="FMGroup.html">
-                <img class="navbar-brand-img" src="img/Logo-1.jpg" width="135" height="55">
-                </a>
-        </div><!-- .centered -->
-    </header><!-- .masthead -->
-
-    <div class="menu">
-                  <nav id="single-nav" class="single-nav menu" role="navigation">
-                        <ul>
-                            <li><a href="index.html">Apie Mus</a></li>
-                            <li><a href="paslaugos.html">Paslaugos</a></li>
-                            <li><a href="kontaktai.html">Kontaktai</a></li>
-                            <li  class="active"><a href="karjera.html">Karjera</a></li>
-                        </ul>
-                    </nav><!-- #single-nav .single-nav -->
-                        <div class="dropdown">
-                                            <button onclick="myFunction()" class="dropbtn">LT</button>
-                                            <div id="myDropdown" class="dropdown-content">
-                                            <a href="languages/en/englishindex.html">EN</a>
-                                            <a href="languages/est/estonianindex.html">EST</a>
-                                            <a href="languages/lv/latvianindex.html">LV</a>
-                                            </div>
-                                      </div>
-    </div> <!-- menu-->
-
- <a class="top" name="top"></a>
-
+<header class="site-branding">
+  <div class="centered">
+    <a class="navbar-brand" href="index.html">
+        <img class="navbar-brand-img" src="img/Logo-1.jpg" href="index.html" width="135" height="55">
+    </a>
+  </div><!-- .centered -->
+</header><!-- .masthead -->
+<div class="menu">
+    <nav id="single-nav" class="single-nav menu" role="navigation">
+        <ul>
+          <li><a href="index.html">Apie Mus</a></li>
+          <li><a href="paslaugos.html">Paslaugos</a></li>
+          <li><a href="kontaktai.html">Kontaktai</a></li>
+          <li  class="active"><a href="karjera.html">Karjera</a></li>
+        </ul>
+    </nav><!-- #single-nav .single-nav -->
+          <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">LT</button>
+                  <div id="myDropdown" class="dropdown-content">
+                      <a href="languages/en/englishindex.html">EN</a>
+                      <a href="languages/est/estonianindex.html">EST</a>
+                      <a href="languages/lv/latvianindex.html">LV</a>
+                  </div>
+          </div>
+</div> <!-- menu-->
+<a class="top" name="top"></a>
 <div class="wrap wrap-karjera">
-
-<div class="column karjera-img ">
-<img src="img/carrier2.jpg" class="responsive img-fluid" alt="Žmonės susikibę rankomis">
-
-
-</div>
-
-  <div class="column karjera-text">
+    <div class="column karjera-img ">
+        <img src="img/carrier.jpg" class="responsive img-fluid" alt="Žmonės susikibę rankomis">
+    </div>
+    <div class="column karjera-text">
        <p><b><i> Prisijunkite prie mūsų!</b></i><br>
               Turite išsilavinimą finansų srityje, o gal vis dar studijuojate finansus, ekonomiką ar buhalterinę apskaitą?
               Mokate ir jums patinka analizuoti?
@@ -78,75 +60,20 @@
               Nekantriai laukiame susitikimo!
               Konfidencialumą garantuojame.
        </p>
-
-  </div>
-
+    </div>
 </div>
-
-
 <div class="bottom-img">
-
 </div>
-
-
-
-
- <div class="footer">
+<div class="footer">
   <p>© 2018 Copyright: FMG Financial Management Group</p>
 </div>
-
 <div class="container-fluid my-btn">
   <button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">Į viršų</button>
 </div>
-
+<!--script -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="fmgjs/fmgother.js"></script>
 
-<script>
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-function toggleThis(id, event){
-    console.log(id,event);
-    $(".activePanel").removeClass("activePanel");
-    $(id).addClass("activePanel");
-    return false;
-}
-
-$(document).ready(function(){
-
-  toggleThis(".panel-1");
-  var currentLocation = window.location.hash.replace("#","");
-  console.log('trololo',currentLocation);
-  if(currentLocation)
-
-  $(".active.show").removeClass("active show");
-  $("."+currentLocation).addClass("active show").click();
-  $("."+currentLocation).parent().addClass("active");
-
-});
-
-function toggleCity(id, event){
-    console.log(id,event);
-    $(".activeCity").removeClass("activeCity");
-    $(id).addClass("activeCity");
-
-    return false;
-}
-</script>
-
-    </body>
+</body>
 </html>
