@@ -21,6 +21,9 @@ body {
   cursor: pointer;
   padding-right: 20px;
 }
+.dropbtn:hover {
+color: #00224B;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -30,7 +33,6 @@ body {
   display: none;
   position: absolute;
   background-color: #00224B;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-size: 12px;
@@ -221,6 +223,14 @@ h5 {
      padding:10px;
      background-color: #fff;
 }
+.aboutus li::before {
+content: "•";
+color: rgb(84, 141, 212);
+display: inline-block;
+width: 1em;
+margin-left: 3px;
+}
+
 .img-responsive, .biography {
     display: flex;
     justify-content: center;
@@ -238,7 +248,7 @@ h5 {
     }
 .column-panels {
     border: 10px solid rgb(84, 141, 212);
-    background-color:rgb(84, 141, 212);
+    background-color: rgb(84, 141, 212);/*linear-gradient(#548DD4, 70%, #FFF);*/
     color: #FFF;
 }
 h4{
@@ -265,11 +275,11 @@ color: #FFF;
     list-style: none;
     padding:0;
     justify-content: center;
-    background-color: rgb(84, 141, 212);
+    background-color: rgba(84, 141, 212, 0);
     margin:0;
 }
 .dotstyle {
-    background-color: rgb(84, 141, 212);
+    background-color: rgba(84, 141, 212, 0);
 }
 
 
