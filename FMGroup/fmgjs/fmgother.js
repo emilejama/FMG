@@ -41,3 +41,14 @@ function toggleThis(id){
     $(id).addClass("activePanel");
     return false;
 }
+
+let mainNav = document.getElementById('MysingleNav');
+
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+
+navBarToggle.addEventListener('click', function () {
+
+    mainNav.classList.toggle('activeMenu');
+
+});

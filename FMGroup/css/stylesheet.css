@@ -1,6 +1,6 @@
 /* * {
 border: 1px solid black;
-}  */
+} */
 body, html {
     font-size: 14px;
     font-family:'PT sans', sans-serif, 'Noto sans', sans-serif,  'Arial', sans-serif;
@@ -8,6 +8,8 @@ body, html {
 body {
     max-width: 1400px;
     margin: auto;
+    min-width: 230px;
+    overflow: scroll;
 }
 .centered {
     display: flex;
@@ -60,6 +62,17 @@ body {
     background-color: rgb(210,228,243);
 }
 .show {display:block;}
+
+.bgservice {
+ background: url("../img/naujosfoto/paslaugos5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*.single-nav .icon {
+  display: none;
+}*/
+
 /* //////////////////////////mob navicagija ////////////////*/
 /*
 .site-branding {
@@ -392,7 +405,7 @@ color: #FFF;
     background-repeat: no-repeat;
 }
 .panel-9 {
-    background: url("../img/klaipeda.jpg");
+    background: url("../img/naujosfoto/klaipedaa.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -407,7 +420,7 @@ color: #FFF;
     background-repeat: no-repeat;
 }
 .panel-12 {
-    background: url("../img/london.jpg");
+    background: url("../img/naujosfoto/londonn.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -603,6 +616,7 @@ color: #FFF;
     .karjera-img {
         margin-right: 10px;
     }
+
 }
 @media screen and (min-width:650px) and  (max-width: 950px) {
   .panel-1, .panel-2 {
@@ -666,7 +680,58 @@ color: #FFF;
     .activeCity {
         display: flex;
     }
+
+
+   /* .single-nav a:not(:first-child) {display: none;}
+  .single-nav a.icon {
+    float: right;
+    display: block;
+  }*/
 }
+@media screen and (min-width: 499px) {
+span#js-navbar-toggle.navbar-toggle {
+display: none;
+    }
+}
+@media screen and (max-width: 498px) {
+ .single-nav {
+    list-style-type: none;
+    display: none;
+}
+.navbar-toggle {
+  position: absolute;
+    top: 20px;
+    right: 20px;
+display: flex;
+justify-content: center;
+cursor: pointer;
+    color: rgb(84, 141, 212);
+    font-size: 24px;
+  }
+
+  .activeMenu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+}
+
+/*@media screen and (max-width: 650px) {
+.single-nav.responsive {position: relative;}
+  .single-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .single-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  }*/
+
 .dotstyle ul {
     position: relative;
     display: inline-block;
@@ -724,3 +789,5 @@ color: #FFF;
     text-align: center;
 }
 /*&times; X*/
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav   https://www.w3schools.com/howto/howto_js_topnav_responsive.asp  https://codepen.io/mutedblues/pen/MmPNPG*/

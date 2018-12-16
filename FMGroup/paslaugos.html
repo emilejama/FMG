@@ -7,6 +7,7 @@
     <meta name="description" content="Financial service by FMGroup">
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="all">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="favicon.ico" />
     <!-- favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -24,24 +25,27 @@
           <img class="navbar-brand-img" src="img/Logo-1.jpg" href="index.html" width="135" height="55">
         </a>
     </div><!-- .centered -->
+     <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+</span>
   </header><!-- .masthead -->
-<div class="menu">
-    <nav id="single-nav" class="single-nav menu" role="navigation">
+<div class="menu" id="js-menu">
+    <nav id="MysingleNav" class="single-nav menu" role="navigation">
           <ul>
             <li><a href="index.html">Apie Mus</a></li>
             <li  class="active"><a href="paslaugos.html">Paslaugos</a></li>
             <li><a href="kontaktai.html">Kontaktai</a></li>
             <li><a href="karjera.html">Karjera</a></li>
-          </ul>
-    </nav><!-- #single-nav .single-nav -->
-            <div class="dropdown">
+            <li><div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">LT</button>
                       <div id="myDropdown" class="dropdown-content">
                           <a href="languages/en/englishindex.html">EN</a>
                           <a href="languages/est/estonianindex.html">EST</a>
                           <a href="languages/lv/latvianindex.html">LV</a>
                       </div>
-            </div>
+            </div></li>
+          </ul>
+    </nav><!-- #single-nav .single-nav -->
 </div> <!-- menu-->
 <a class="top" name="top"></a>
 <h4 class="intro-service">
@@ -62,7 +66,7 @@
                    <a id="fifthhdot" href="#"  onclick="return toggleThis('.panel-7')"  >Audito paslaugos</a></li>
             </ul>
     </div>
-    <div class="panel column panel-3 service activePanel background-color-white">
+    <div class="panel column panel-3 service activePanel background-color-white bgservice">
         <ul class="bullet-colour"><b><i>Buhalterinė apskaita</b></i><br>
                   <li>Apskaitos tvarkymas pagal vietinius verslo apskaitos standartus;</li>
                   <li>Apskaitos tvarkymas pagal tarptautinius apskaitos standartus (IFRS);</li>
@@ -74,7 +78,7 @@
                   <li>Pirminių apskaitos dokumentų rengimas, sekretoriavimo paslaugos (pardavimo sąskaitų išrašymas, darbo laiko apskaitos žiniaraščių pildymas, inventorizacijų dokumentavimas, reprezentacijos aktai, akcininkų susirinkimų protokolai, mokėjimo pavedimų parengimas ir t.t.), kurjerio paslaugos.</li>
         </ul>
     </div>
-    <div class="panel panel-4 dot-fixed-services service background-color-white">
+    <div class="panel panel-4 dot-fixed-services service background-color-white bgservice">
         <ul class="bullet-colour"><b><i>Darbo užmokestis</b></i><br>
                   <li>Darbo užmokesčio skaičiavimas;</li>
                   <li>Algalapių parengimas ir pateikimas kiekvienam darbuotojui;</li>
@@ -84,7 +88,7 @@
                   <li>Kliento interesų atstovavimas SoDroje, VMI bei Registrų Centre.</li>
           </ul>
       </div>
-      <div class="panel panel-5 dot-fixed-services service background-color-white">
+      <div class="panel panel-5 dot-fixed-services service background-color-white bgservice">
           <ul class="bullet-colour"><b><i>Įmonių finansai</b></i><br>
                   <li>Išorinio / vizituojančio finansų direktoriaus paslauga;</li>
                   <li>Finansavimo pritraukimas;</li>
@@ -93,7 +97,7 @@
                   <li>Strateginis konsultavimas verslo plėtros klausimais.</li>
           </ul>
       </div>
-      <div class="panel panel-6 dot-fixed-services service background-color-white">
+      <div class="panel panel-6 dot-fixed-services service background-color-white bgservice">
           <ul class="bullet-colour"><b><i>Bendradarbiaudami su advokatų profesine bendrija Jurkonis ir partneriai, teikiame teisines paslaugas:</b></i><br>
                   <li>Įmonių teisė;</li>
                   <li>Mokestinė teisė;</li>
@@ -107,7 +111,7 @@
                   <li>PVM registracija, fiskalinio agento paslaugos.</li>
             </ul>
       </div>
-      <div class="panel panel-7 dot-fixed-services service background-color-white">
+      <div class="panel panel-7 dot-fixed-services service background-color-white bgservice">
             <ul class="bullet-colour"><b><i>Bendradarbiaudami su geriausiomis audito bendrovėmis teikiame šias paslaugas:</b></i><br>
                   <li>Finansinės atskaitomybės ir veiklos auditas (privataus ir viešojo sektoriaus);</li>
                   <li>Apskaitos skyriaus funkcijų auditas;</li>

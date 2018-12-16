@@ -65,3 +65,24 @@ window.onclick = function(event) {
     }
   }
 }
+
+/*function myFunction() {
+  var x = document.getElementById("MysingleNav");
+  if (x.className === "single-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "single-nav";
+  }
+}
+*/
+
+let mainNav = document.getElementById('MysingleNav');
+
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+
+navBarToggle.addEventListener('click', function () {
+
+    mainNav.classList.toggle('activeMenu');
+
+});

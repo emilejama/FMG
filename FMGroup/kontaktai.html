@@ -7,6 +7,7 @@
     <meta name="description" content="Financial service by FMGroup">
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="all">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="favicon.ico" />
     <!-- favicon all devices-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -24,24 +25,27 @@
             <img class="navbar-brand-img" src="img/Logo-1.jpg" href="index.html" width="135" height="55">
         </a>
     </div><!-- .centered -->
+     <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+</span>
   </header><!-- .masthead -->
-<div class="menu">
-    <nav id="single-nav" class="single-nav menu" role="navigation">
+<div class="menu" id="js-menu">
+    <nav id="MysingleNav" class="single-nav menu" role="navigation">
         <ul>
           <li><a href="index.html">Apie Mus</a></li>
           <li><a href="paslaugos.html">Paslaugos</a></li>
           <li class="active"><a href="kontaktai.html">Kontaktai</a></li>
           <li><a href="karjera.html">Karjera</a></li>
-        </ul>
-    </nav><!-- #single-nav .single-nav -->
-            <div class="dropdown">
+          <li>  <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">LT</button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="languages/en/englishindex.html">EN</a>
                         <a href="languages/est/estonianindex.html">EST</a>
                         <a href="languages/lv/latvianindex.html">LV</a>
                     </div>
-            </div>
+            </div></li>
+        </ul>
+    </nav><!-- #single-nav .single-nav -->
 </div> <!-- menu-->
 <a class="top" name="top"></a>
 <div class="empty-div">
