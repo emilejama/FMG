@@ -685,11 +685,18 @@ color: #FFF;
         justify-content: center;
         justify-content: space-evenly;
     }
+
 }
 @media screen and (max-width:500px) {
     body {
         font-size: 14px;
         line-height: 1.5;
+    }
+    .dropdown-content {
+position: relative;
+    }
+      .menu {
+        border: none;
     }
 }
 @media screen and (min-width:501px) and (max-width:650px) {
@@ -752,9 +759,7 @@ cursor: pointer;
   flex-direction: column;
   justify-content: center;
 }
-    .menu {
-        border: none;
-    }
+
 }
 
 /*@media screen and (max-width: 650px) {
