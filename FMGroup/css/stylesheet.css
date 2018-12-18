@@ -36,6 +36,7 @@ body {
   position: relative;
   display: inline-block;
   margin-right: 10px;
+  text-align: center;
 }
 .dropdown-content {
   display: none;
@@ -191,6 +192,9 @@ background-color: rgb(84, 141, 212);
 } */
 /* //////////////////////////mob nagicagija ////////////////*/
 .menu {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
     display: flex;
     justify-content: center;
 }
@@ -431,12 +435,12 @@ color: #FFF;
     background-repeat: no-repeat;
 }
 .panel-9 {
-    background: url("../img/naujosfoto/klaipedaa.jpg");
+    background: url("../img/naujosfoto/aklaipeda.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .panel-10 {
-    background: url("../img/riga.jpg");
+    background: url("../img/naujosfoto/ariga.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -446,7 +450,7 @@ color: #FFF;
     background-repeat: no-repeat;
 }
 .panel-12 {
-    background: url("../img/naujosfoto/londonn.jpg");
+    background: url("../img/naujosfoto/alondon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -460,6 +464,8 @@ color: #FFF;
   background-color: rgb(84, 141, 212);
 }
 .activePanel {
+    display: inline-block;
+    width: 100%;
     display:flex;
 }
 .text-block {
@@ -521,6 +527,8 @@ color: #FFF;
     }
 }
 .activePanel.panel {
+        display: inline-block;
+        width: 100%;
         display: flex;
     }
 @media screen and (min-width:800px) {
@@ -567,7 +575,7 @@ color: #FFF;
         padding-bottom: 40px;
     }
     .intro-service {
-        background-color: rgb(210,228,243);
+        background-color: #FFF;
         margin: 0;
         padding: 15px;
     }
@@ -576,7 +584,7 @@ color: #FFF;
         text-align: center;
     }
     .service-list ul li:hover, .contacts-list ul li:hover {
-        background-color: rgb(84, 141, 212);
+        background-color: rgb(210,228,243);
     }
     .service-list ul li a, .contacts-list ul li a {
         color: #00224B;
@@ -586,7 +594,7 @@ color: #FFF;
         padding: 10px;
     }
     .service-list ul li a:hover, .contacts-list ul li a:hover {
-        color: #FFF;
+        color: #00224B;
     }
     .wrap-service {
     height: 500px;
@@ -689,6 +697,9 @@ color: #FFF;
         font-size: 15px;
         line-height: 1.5;
     }
+    .single-nav ul {
+      width: 100%;
+    }
 }
 @media screen and (min-width:651px) and (max-width:1230px) {
     body {
@@ -741,7 +752,9 @@ cursor: pointer;
   flex-direction: column;
   justify-content: center;
 }
-
+    .menu {
+        border: none;
+    }
 }
 
 /*@media screen and (max-width: 650px) {

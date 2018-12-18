@@ -76,9 +76,9 @@ window.onclick = function(event) {
 }
 */
 
-let mainNav = document.getElementById('MysingleNav');
+var mainNav = document.getElementById('MysingleNav');
 
-let navBarToggle = document.getElementById('js-navbar-toggle');
+var navBarToggle = document.getElementById('js-navbar-toggle');
 
 
 navBarToggle.addEventListener('click', function () {
