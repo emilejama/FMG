@@ -72,9 +72,7 @@ display: inline-block;
     background-repeat: no-repeat;
 }
 
-.contactus {
-display: inline-block;
-text-align: center;
+/*.contactus {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -98,7 +96,7 @@ text-decoration: none;
 .contactus:hover {
 background-color: rgb(84, 141, 212);
  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
+}*/
 /*.single-nav .icon {
   display: none;
 }*/
@@ -235,6 +233,7 @@ h5 {
 }
 .img-responsive, .biography {
 display: inline-block;
+text-align: center;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -243,7 +242,6 @@ display: inline-block;
     border: 10px solid rgb(210,228,243);
 }
 .column-quote {
-display: inline-block;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -271,7 +269,6 @@ h4{
     color: #FFF;
 }
 .dotstyle ul{
-display: inline-block;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -285,6 +282,7 @@ display: inline-block;
 }
 .footer {
 display: inline-block;
+width: 100%;
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -303,7 +301,6 @@ display: inline-block;
     margin: 0;
 }
 .single-nav ul li {
-display: inline-block;
     display: flex;
     justify-content: center;
     line-height: 2;
@@ -311,7 +308,6 @@ display: inline-block;
     padding: 0;
 }
 .single-nav ul li:hover {
-display: inline-block;
     display: flex;
     justify-content: center;
     line-height: 2;
@@ -397,7 +393,6 @@ color: #FFF;
     display: inline-block;
 }
 .service-list ul li a, .contacts-list ul li a {
-display: inline-block;
     color: rgb(84, 141, 212);
     display: flex;
     justify-content: center;
@@ -426,7 +421,6 @@ display: inline-block;
     border: 10px solid rgb(210,228,243)
 }
 .karjera-text {
-display: inline-block;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -518,13 +512,11 @@ display: inline-block;
         margin-top: 20px;
     }
     .allwrap {
-    display: inline-block;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
     .column-aboutus, .column-panels, .border-wrap {
-    display: inline-block;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -547,7 +539,6 @@ display: inline-block;
     }
 @media screen and (min-width:800px) {
     .wrap-contacts {
-
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -555,7 +546,6 @@ display: inline-block;
         background-color: #fff;
         }
     .wrap-service {
-
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -563,7 +553,6 @@ display: inline-block;
         background-color: #FFF;
     }
     .service-list, .contacts-list {
-
         display: flex;
         flex-wrap: wrap;
         flex: 1;
@@ -572,7 +561,6 @@ display: inline-block;
         background-color: #fff;
     }
     .contacts {
-
         display: flex;
         flex-wrap: wrap;
         flex: 3;
@@ -584,7 +572,6 @@ display: inline-block;
     }
     .service  {
         /*display: flex;*/
-
         flex-wrap: wrap;
         flex: 3;
         justify-content:  flex-start;
@@ -638,13 +625,11 @@ display: inline-block;
         display: none;
     }
     .wrap {
-    display: inline-block;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
     .border-wrap  {
-    display: inline-block;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -668,7 +653,6 @@ display: inline-block;
 }
 @media screen and (min-width:650px) and  (max-width: 950px) {
   .panel-1, .panel-2 {
-  display: inline-block;
         display: flex;
         flex-wrap: wrap;
         flex: 1;
@@ -678,7 +662,6 @@ display: inline-block;
 }
 @media screen and (min-width:500px) {
     .column-leaders {
-    display: inline-block;
           display: flex;
           flex-direction: row;
     }
@@ -746,7 +729,6 @@ position: relative;
 }
 @media screen and (max-width: 650px) {
     .activeCity {
-    display: inline-block;
         display: flex;
     }
 
@@ -768,7 +750,6 @@ display: none;
     display: none;
 }
 .navbar-toggle {
-display: inline-block;
   position: absolute;
     top: 20px;
     right: 20px;
@@ -780,7 +761,7 @@ cursor: pointer;
   }
 
   .activeMenu {
-  display: inline-block;
+  display: block;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
