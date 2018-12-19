@@ -12,6 +12,7 @@ body {
     overflow: scroll;
 }
 .centered {
+display: inline-block;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -72,6 +73,8 @@ body {
 }
 
 .contactus {
+display: inline-block;
+text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -231,6 +234,7 @@ h5 {
     margin-left: 3px;
 }
 .img-responsive, .biography {
+display: inline-block;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -239,6 +243,7 @@ h5 {
     border: 10px solid rgb(210,228,243);
 }
 .column-quote {
+display: inline-block;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -266,6 +271,7 @@ h4{
     color: #FFF;
 }
 .dotstyle ul{
+display: inline-block;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -278,6 +284,7 @@ h4{
     background-color: rgba(84, 141, 212, 0);
 }
 .footer {
+display: inline-block;
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -296,6 +303,7 @@ h4{
     margin: 0;
 }
 .single-nav ul li {
+display: inline-block;
     display: flex;
     justify-content: center;
     line-height: 2;
@@ -303,6 +311,7 @@ h4{
     padding: 0;
 }
 .single-nav ul li:hover {
+display: inline-block;
     display: flex;
     justify-content: center;
     line-height: 2;
@@ -326,6 +335,7 @@ li.active {
     border-top: 2px solid #00224B;
 }
 .menu ul li a {
+display: inline-block;
     color: #FFF;
     text-decoration: none;
     display: flex;
@@ -387,6 +397,7 @@ color: #FFF;
     display: inline-block;
 }
 .service-list ul li a, .contacts-list ul li a {
+display: inline-block;
     color: rgb(84, 141, 212);
     display: flex;
     justify-content: center;
@@ -415,6 +426,7 @@ color: #FFF;
     border: 10px solid rgb(210,228,243)
 }
 .karjera-text {
+display: inline-block;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -506,11 +518,13 @@ color: #FFF;
         margin-top: 20px;
     }
     .allwrap {
+    display: inline-block;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
     .column-aboutus, .column-panels, .border-wrap {
+    display: inline-block;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -533,6 +547,7 @@ color: #FFF;
     }
 @media screen and (min-width:800px) {
     .wrap-contacts {
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -540,6 +555,7 @@ color: #FFF;
         background-color: #fff;
         }
     .wrap-service {
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -547,6 +563,7 @@ color: #FFF;
         background-color: #FFF;
     }
     .service-list, .contacts-list {
+
         display: flex;
         flex-wrap: wrap;
         flex: 1;
@@ -555,6 +572,7 @@ color: #FFF;
         background-color: #fff;
     }
     .contacts {
+
         display: flex;
         flex-wrap: wrap;
         flex: 3;
@@ -566,6 +584,7 @@ color: #FFF;
     }
     .service  {
         /*display: flex;*/
+
         flex-wrap: wrap;
         flex: 3;
         justify-content:  flex-start;
@@ -619,11 +638,13 @@ color: #FFF;
         display: none;
     }
     .wrap {
+    display: inline-block;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
     .border-wrap  {
+    display: inline-block;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -647,6 +668,7 @@ color: #FFF;
 }
 @media screen and (min-width:650px) and  (max-width: 950px) {
   .panel-1, .panel-2 {
+  display: inline-block;
         display: flex;
         flex-wrap: wrap;
         flex: 1;
@@ -656,6 +678,7 @@ color: #FFF;
 }
 @media screen and (min-width:500px) {
     .column-leaders {
+    display: inline-block;
           display: flex;
           flex-direction: row;
     }
@@ -663,6 +686,7 @@ color: #FFF;
         align-items: center;
     }
     .menu ul{
+    display: inline-block;
         display: flex;
         flex-wrap: wrap;
         justify-content: row;
@@ -722,6 +746,7 @@ position: relative;
 }
 @media screen and (max-width: 650px) {
     .activeCity {
+    display: inline-block;
         display: flex;
     }
 
@@ -743,6 +768,7 @@ display: none;
     display: none;
 }
 .navbar-toggle {
+display: inline-block;
   position: absolute;
     top: 20px;
     right: 20px;
@@ -754,6 +780,7 @@ cursor: pointer;
   }
 
   .activeMenu {
+  display: inline-block;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
