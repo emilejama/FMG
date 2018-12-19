@@ -66,11 +66,7 @@ display: inline-block;
 }
 .show {display:block;}
 
-.bgservice {
- background: url("../img/naujosfoto/paslaugos5.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 /*.contactus {
     display: flex;
@@ -263,7 +259,7 @@ h4{
 .panel {
     display: none;
     flex-wrap:wrap;
-    padding: 10px;
+
 }
 .balta{
     color: #FFF;
@@ -288,7 +284,7 @@ width: 100%;
     color: #FFF;
     background-color: #00224B;
     font-size: 12px;
-    padding: 5px;
+
     text-align:center;
 }
 .single-nav {
@@ -377,6 +373,7 @@ display: inline-block;
     text-transform: uppercase;
     text-align: center;
     line-height: 2;
+        height: 195px;
 }
 .service-list ul li.activeCity a {
 color: #FFF;
@@ -416,9 +413,12 @@ color: #FFF;
     text-align: center;
     overflow: hidden;
 }
+.background-color-white ul{
+border: 10px solid rgb(210,228,243)
+}
 .background-color-white {
     background-color: #FFF;
-    border: 10px solid rgb(210,228,243)
+
 }
 .karjera-text {
     padding: 15px;
@@ -575,9 +575,9 @@ color: #FFF;
         flex-wrap: wrap;
         flex: 3;
         justify-content:  flex-start;
-        flex-direction: column;
+
         background-color:#FFF;
-        padding-top: 40px;
+
         padding-bottom: 40px;
     }
     .intro-service {
@@ -588,6 +588,7 @@ color: #FFF;
     .service-list ul, .contacts-list ul {
         font-size: 14px;
         text-align: center;
+        margin-top: -75px;
     }
     .service-list ul li:hover, .contacts-list ul li:hover {
         background-color: rgb(210,228,243);
@@ -685,6 +686,16 @@ color: #FFF;
             background-size: cover;
             background-repeat: no-repeat;
     }
+    .bgservice ul {
+        background: url(../img/naujosfoto/paslaugos5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    display: inline-block;
+    width: inherit;
+    padding: 30px;
+    margin-top: -30px;
+}
 }
 @media screen and (max-width: 499px) {
     .single-nav ul {
