@@ -436,17 +436,17 @@ border: 10px solid rgb(210,228,243)
     width: 100%;
 }
 .panel-8 {
-    background: url("../img/naujosfoto/vilnius.jpg");
+    background: url("../img/vilnius.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .panel-9 {
-    background: url("../img/naujosfoto/aklaipeda.jpg");
+    background: url("../img/klaipeda.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .panel-10 {
-    background: url("../img/naujosfoto/ariga.jpg");
+    background: url("../img/riga.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -456,13 +456,13 @@ border: 10px solid rgb(210,228,243)
     background-repeat: no-repeat;
 }
 .panel-12 {
-    background: url("../img/naujosfoto/alondon.jpg");
+    background: url("../img/london.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.miestai {
+/*.miestai {
   border: 10px solid rgb(210,228,243);
-}
+}*/
 .miestai, .contacts {
     display:none;
 }
@@ -476,11 +476,12 @@ border: 10px solid rgb(210,228,243)
 }
 .text-block {
     background-color: rgba(255,255,255,0.7);
-    margin-top: 80px;
+    margin-top: 100px;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
     margin-bottom: 80px;
+    border: 7px solid rgb(210,228,243);
 }
 .contacts-list ul li.activeCity a {
     color: #FFF;
@@ -697,6 +698,7 @@ border: 10px solid rgb(210,228,243)
     margin-top: -30px;
 }
 }
+
 @media screen and (max-width: 499px) {
     .single-nav ul {
         width: 100%;
