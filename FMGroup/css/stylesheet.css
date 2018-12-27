@@ -460,9 +460,9 @@ border: 10px solid rgb(210,228,243)
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*.miestai {
+.miestai {
   border: 10px solid rgb(210,228,243);
-}*/
+}
 .miestai, .contacts {
     display:none;
 }
@@ -471,7 +471,7 @@ border: 10px solid rgb(210,228,243)
 }
 .activePanel {
     display: inline-block;
-    width: 100%;
+
     display:flex;
 }
 .text-block {
@@ -481,7 +481,6 @@ border: 10px solid rgb(210,228,243)
     padding-bottom: 15px;
     width: 100%;
     margin-bottom: 80px;
-    border: 7px solid rgb(210,228,243);
 }
 .contacts-list ul li.activeCity a {
     color: #FFF;
@@ -535,7 +534,7 @@ border: 10px solid rgb(210,228,243)
 }
 .activePanel.panel {
         display: inline-block;
-        width: 100%;
+
         display: flex;
     }
 @media screen and (min-width:800px) {
@@ -688,7 +687,7 @@ border: 10px solid rgb(210,228,243)
             background-repeat: no-repeat;
     }
     .bgservice ul {
-        background: url(../img/naujosfoto/paslaugos5.jpg);
+        /*background: url(../img/naujosfoto/paslaugosfoto.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     height: 360px;
@@ -696,6 +695,7 @@ border: 10px solid rgb(210,228,243)
     width: inherit;
     padding: 30px;
     margin-top: -30px;
+    width: 100%;
 }
 }
 
@@ -717,6 +717,14 @@ position: relative;
     }
       .menu {
         border: none;
+    }
+    ul.bullet-colour {
+        padding-top: 20px;
+        padding-bottom:20px;
+    }
+    button.dropbtn {
+        padding-left: 49%;
+        padding-right: 50%;
     }
 }
 @media screen and (min-width:501px) and (max-width:650px) {
