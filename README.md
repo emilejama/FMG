@@ -15,3 +15,9 @@ git commit -m "<your message>"
 git push origin master
 
 
+git push origin DEV
+git checkout master
+git status
+git merge DEV
+git status
+git push origin master
