@@ -278,15 +278,19 @@ h4{
     background-color: rgba(84, 141, 212, 0);
 }
 .footer {
-display: inline-block;
-width: 100%;
+    display: inline-block;
+    width: 100%;
     display: flex;
     justify-content: center;
     color: #FFF;
     background-color: #00224B;
     font-size: 12px;
-
     text-align:center;
+}
+.privacy {
+    font-size: 12px;
+    color: #FFF;
+    cursor: pointer;
 }
 .single-nav {
     width: 100%;
